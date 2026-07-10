@@ -1,0 +1,59 @@
+project:
+  type: book
+  output-dir: _book
+  render:
+    - index.md
+    - 01_r.md
+    - 02_rstudio.md
+    - 03_packages.md
+    - 04_rproj.md
+    - 05_basics.md
+    - 06_objects.md
+    - 07_in_practice.md
+    - 08_resources.md
+
+book:
+  title: "DATA SCIENCE BOOTCAMP 2026"
+  subtitle: "Part 1: R"
+  output-file: bootcamp-r
+  repo-url: https://github.com/Data-Science-Bootcamp-2026/bootcamp-r
+  repo-actions:
+    - issue
+  downloads:
+    - pdf
+  page-navigation: true
+  chapters:
+    - index.md
+    - 01_r.md
+    - 02_rstudio.md
+    - 03_packages.md
+    - 04_rproj.md
+    - 05_basics.md
+    - 06_objects.md
+    - 07_in_practice.md
+    - 08_resources.md
+  sidebar:
+    title: "Bootcamp Part 1: R"
+    style: docked
+    search: true
+
+format:
+  html:
+    theme:
+      light: litera
+      dark: darkly
+    css: styles.css
+    number-sections: true
+    toc: true
+    toc-depth: 3
+    page-layout: article
+  pdf:
+    documentclass: scrreprt
+    number-sections: true
+    toc: true
+    geometry:
+      - top=0.9in
+      - bottom=0.9in
+      - left=0.9in
+      - right=0.9in
+      - footskip=0.32in

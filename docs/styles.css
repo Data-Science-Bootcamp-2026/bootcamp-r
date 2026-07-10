@@ -1,0 +1,88 @@
+:root {
+  --bs-body-font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  font-family: var(--bs-body-font-family);
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+@media (min-width: 1400px) {
+  body.docked #quarto-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: min(1600px, calc(100vw - 2rem));
+    width: fit-content;
+  }
+}
+
+#quarto-margin-sidebar {
+  background: var(--quarto-scss-export-sidebar-bg, var(--bs-tertiary-bg));
+  border-left: 1px solid var(--bs-border-color);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#quarto-document-content,
+#quarto-document-content p,
+#quarto-document-content li,
+#quarto-document-content td,
+#quarto-document-content th,
+#quarto-document-content blockquote {
+  font-family: var(--bs-body-font-family);
+}
+
+.quarto-title-block .title,
+.landing-title > h1,
+.landing-title > h1 > .header-section-number {
+  font-size: 2rem;
+  font-weight: 750;
+  line-height: 1;
+  color: inherit;
+}
+
+.landing-title > h1 > .header-section-number {
+  margin-right: 0.35rem;
+}
+
+#TOC > ul > li > a[data-scroll-target="#welcome"] {
+  display: none;
+}
+
+#TOC > ul > li > a[data-scroll-target="#welcome"] + ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#why-r > h2::after,
+#why-rstudio > h2::after,
+#tidyverse > h2::after {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  display: inline-block;
+  height: 1.2em;
+  margin-left: -1rem;
+  vertical-align: -0.2em;
+  width: 1.2em;
+}
+
+#why-r > h2::after {
+  background-image: url("assets/images/r_logo.webp");
+}
+
+#why-rstudio > h2::after {
+  background-image: url("assets/images/rstudio_logo.webp");
+  width: 2.4em;
+}
+
+#tidyverse > h2::after {
+  background-image: url("assets/images/tidyverse_logo.webp");
+}
+
+.inline-logo {
+  height: 1em;
+  margin-left: 0.5em;
+}
