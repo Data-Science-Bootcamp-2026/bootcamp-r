@@ -1,2 +1,3 @@
-# data-science-bootcamp-2026-slides
-Bootcamp presentation slides
+Data Science Bootcamp 2026: Part 1 - R
+
+
