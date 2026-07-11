@@ -86,3 +86,28 @@ body {
   height: 1em;
   margin-left: 0.5em;
 }
+
+/* Keep numbered references aligned in both the bibliography and citation preview. */
+.csl-entry:has(> .csl-left-margin) {
+  column-gap: 0;
+  display: grid;
+  grid-template-columns: 2em minmax(0, 1fr);
+}
+
+.hanging-indent.csl-entry,
+.hanging-indent .csl-entry {
+  margin-left: 0;
+  text-indent: 0;
+}
+
+.csl-entry > .csl-left-margin {
+  float: none;
+  min-width: 0;
+}
+
+.csl-entry > .csl-right-inline {
+  margin-left: 0;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  padding-left: 0;
+}
