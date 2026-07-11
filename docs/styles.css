@@ -70,16 +70,16 @@ body {
 }
 
 #why-r > h2::after {
-  background-image: url("assets/images/r_logo.webp");
+  background-image: url("assets/images/r_logo.png");
 }
 
 #why-rstudio > h2::after {
-  background-image: url("assets/images/rstudio_logo.webp");
+  background-image: url("assets/images/rstudio_logo.png");
   width: 2.4em;
 }
 
 #tidyverse > h2::after {
-  background-image: url("assets/images/tidyverse_logo.webp");
+  background-image: url("assets/images/tidyverse_logo.png");
 }
 
 .inline-logo {

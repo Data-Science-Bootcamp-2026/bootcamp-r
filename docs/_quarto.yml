@@ -44,7 +44,7 @@ format:
       dark: darkly
     css: styles.css
     bibliography: ../references.bib
-    csl: american-medical-association.csl
+    csl: ../american-medical-association.csl
     notes-after-punctuation: true
     link-citations: true
     number-sections: true
