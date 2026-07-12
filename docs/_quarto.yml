@@ -2,15 +2,15 @@ project:
   type: book
   output-dir: _book
   render:
-    - index.md
-    - 01_r.md
-    - 02_rstudio.md
-    - 03_packages.md
-    - 04_rproj.md
-    - 05_basics.md
-    - 06_objects.md
-    - 07_in_practice.md
-    - 08_resources.md
+    - index.qmd
+    - 01_r.qmd
+    - 02_rstudio.qmd
+    - 03_packages.qmd
+    - 04_rproj.qmd
+    - 05_basics.qmd
+    - 06_objects.qmd
+    - 07_in_practice.qmd
+    - 08_readings.qmd
 
 book:
   title: "DATA SCIENCE BOOTCAMP 2026"
@@ -23,19 +23,23 @@ book:
     - pdf
   page-navigation: true
   chapters:
-    - index.md
-    - 01_r.md
-    - 02_rstudio.md
-    - 03_packages.md
-    - 04_rproj.md
-    - 05_basics.md
-    - 06_objects.md
-    - 07_in_practice.md
-    - 08_resources.md
+    - index.qmd
+    - 01_r.qmd
+    - 02_rstudio.qmd
+    - 03_packages.qmd
+    - 04_rproj.qmd
+    - 05_basics.qmd
+    - 06_objects.qmd
+    - 07_in_practice.qmd
+    - 08_readings.qmd
   sidebar:
     title: "Bootcamp Part 1: R"
     style: docked
     search: true
+
+bibliography: ../references.bib
+csl: ../american-medical-association.csl
+notes-after-punctuation: true
 
 format:
   html:
@@ -43,9 +47,6 @@ format:
       light: litera
       dark: darkly
     css: styles.css
-    bibliography: ../references.bib
-    csl: american-medical-association.csl
-    notes-after-punctuation: true
     link-citations: true
     number-sections: true
     toc: true
@@ -53,6 +54,8 @@ format:
     page-layout: article
     link-external-newwindow: true
   pdf:
+    filters:
+      - pdf-readings-references.lua
     documentclass: scrreprt
     number-sections: true
     toc: true

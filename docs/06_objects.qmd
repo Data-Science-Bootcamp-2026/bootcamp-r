@@ -1,0 +1,201 @@
+---
+title: "Objects"
+---
+
+<div style="height: 2em;"></div>
+
+
+## Objects vs. functions
+
+[John M. Chambers](https://datascience.stanford.edu/people/john-chambers), the creator of the S programming language (the precursor to R) and a member of the R Core Team [@rfoundationcontributors], wrote in 2014 [@chambers2014objectoriented]:
+
+> To understand computations in R, two slogans are helpful:
+> 
+> - Everything that exists is an object.
+> - Everything that happens is a function call.
+
+Numbers, strings, functions, and everything else (even expressions for evaluation) in R are **objects**. Objects are created, transformed, and combined by **function** calls, including operators (e.g., `x <- 1` or `1 + 2` or `1 < 2`).
+
+
+## Data types
+
+**Types** tell you how data is stored internally. Common data types include:
+
++-----------+----------------------------------------------------------------+
+| Data type | Definition                                                     |
++===========+================================================================+
+| Double    | Number with decimal points (default)                           |
++-----------+----------------------------------------------------------------+
+| Integer   | Number without decimal points (if explicitly defined)          |
++-----------+----------------------------------------------------------------+
+| Logical   | Boolean (`TRUE` or `FALSE`)                                    |
++-----------+----------------------------------------------------------------+
+| Character | Text (letters, numbers, symbols)*                              |
++-----------+----------------------------------------------------------------+
+| List      | Collection of arbitrary objects, including of different types  |
++-----------+----------------------------------------------------------------+
+\* *Strings (e.g., `"apple"`) are sequences of characters enclosed in quotes (`''` or `""`).*
+
+You can find an object’s type using `typeof()`. To check whether an object is a particular data type, use `is.integer()`, `is.character()`, and so on. To convert objects to other data types (if it is possible, such as 5 ↔ “5” is okay but 5 ↔ “apple” is not), use `as.integer()`, `as.character()`, and so on.
+
+
+## Classes
+
+**Classes** tell you how data behaves; objects belonging to a class share properties. There are only a few data types but more classes, including:
+
+- Numeric
+- Integer
+- Logical
+- Character
+- Array
+- Matrix
+- List
+- Data frame
+- Factor
+- Date
+- Function
+
+You can find an object's class using `class()`.
+
+For example, `1.2` is stored as type `double` and behaves as class `numeric`. And `as.Date("2026-07-15")` is also stored as type `double` but behaves as class `date`.
+
+
+## Data structures
+
+**Data structures** describe how data is organized. They can vary by data type and dimension.
+
+![Data structures in R [@grolemundhandson]](assets/images/r_datastructures.png){width=400px}
+
+### Vectors
+
+```{r}
+# Construct vectors using c()
+my_vector <- c(1, 2, 3)
+my_vector <- c("1", "2", "3")
+my_vector
+
+# Find elements by indexing (note: unlike Python, negative indices
+# remove elements, rather than look backwards)
+my_vector[2]
+
+# If you try to construct vectors using elements of different types,
+# R will try to coerce the elements to match. In the
+# following example, TRUE becomes 1 (FALSE would be 0).
+c(TRUE, 1)
+
+# A sequence is a vector whose elements follow a regular progression
+0:6
+seq(0, 6, by = 2)
+
+# A vector with 1 element can just be passed as is
+1 == c(1)
+```
+
+### Matrices
+
+```{r}
+# A matrix is constructed vertically, from left to right
+matrix(c(1,2,3,4,5,6,7,8), nrow = 4, ncol = 2)
+```
+
+### Arrays
+
+```{r}
+# An array is constructed vertically, from left to right, and top to
+# bottom; it is not easy to visualize arrays!
+array(c(1:4, 11:14, 21:24), dim = c(2,2,3))
+```
+
+### Lists
+
+```{r}
+# Construct lists using list(); lists can contain elements of the
+# same or different data types
+my_list <- list(1, 2, 3)
+my_list <- list(TRUE, 1, "1")
+my_list <- list("A", c(1, 2))
+my_list
+
+# Find elements and sub-elements by indexing
+my_list[1]
+my_list[[1]]
+my_list[2]
+my_list[[2]]
+my_list[[2]][2]
+
+# You can name each element
+my_list = list(
+  cases_2020 = 25,
+  cases_2021 = 125
+)
+my_list
+
+# Find elements and sub-elements by indexing their name
+my_list$cases_2020
+```
+
+### Data frames
+
+Data frames are lists of vectors that have the same length. They are the most useful data structure for analyses because they are tabular -- just like spreadsheets.
+
+```{r}
+# Construct data frames using data.frame()
+my_df <- data.frame(
+  year = c(2020, 2021),
+  cases = c(25, 125)
+)
+my_df
+
+# Find columns and their elements by indexing their row, column
+my_df[,2]
+my_df[1,2]
+
+# Find columsn and their elements by indexing their name
+my_df$cases
+my_df$cases[1]
+
+# Display the structure of an object
+str(my_df)
+
+# Display the summary of an object
+summary(my_df)
+```
+
+::: {.callout-tip}
+## **Tip**
+A data frame has type `list` (because it is a list of equal-length vectors), but it has class `data.frame`.
+
+```{r}
+df <- data.frame(x = 1:3)
+typeof(df)
+class(df)
+```
+:::
+
+
+## Functions
+
+A function is an object that stores instructions for reuse.
+
+```{r}
+# Construct functions using function() {}
+my_function <- function(a, b) {
+  return(a + b)
+}
+my_function(a=1, b=2)  # Or just my_function(1, 2)
+```
+
+A function has **parameters** (`a` and `b`, above). When calling a function, you pass values for the parameters called **arguments** (`1` and `2`, above). This is where the `=` symbol is appropriate (why we avoid using `=` as an assignment operator).
+
+Functions do not have to `return` anything; they can also `print`, `write`, `plot`, etc. Technically, in the example above, R returns the value of the last evaluated expression anyway, so a `return` statement is not necessary, but it is good to be explicit.
+```{r}
+# Equivalent function
+my_function <- function(a, b) {
+  a + b
+}
+```
+
+
+::: {.content-visible when-format="html"}
+## References
+:::
