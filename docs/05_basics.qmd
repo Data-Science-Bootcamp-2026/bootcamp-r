@@ -27,17 +27,29 @@ Object names must start with a letter, and only contain:
 
 Avoid the following single-character object names:
 
-| Character | Special meaning(s) |
-|-----------|--------------------|
-| `.` | - In formulae, it means all other variables<br>- Can be used as a placeholder |
-| c | - Combine |
-| q | - Quit |
-| t | - Matrix transpose |
-| C | - Set contrasts for a factor |
-| D | - Symbolic and algorithmic derivatives |
-| F | - `FALSE` |
-| I | - Treat an object as is |
-| T | - `TRUE` |
++-------------+--------------------------------------------+
+| Character   | Special meaning(s)                         |
++=============+============================================+
+| `.`         | - In formulae, it means all other\         |
+|             |   variables\                               |
+|             | - Can be used as a placeholder             |
++-------------+--------------------------------------------+
+| c           | - Combine                                  |
++-------------+--------------------------------------------+
+| q           | - Quit                                     |
++-------------+--------------------------------------------+
+| t           | - Matrix transpose                         |
++-------------+--------------------------------------------+
+| C           | - Set contrasts for a factor               |
++-------------+--------------------------------------------+
+| D           | - Symbolic and algorithmic derivatives     |
++-------------+--------------------------------------------+
+| F           | - `FALSE`                                  |
++-------------+--------------------------------------------+
+| I           | - Treat an object as is                    |
++-------------+--------------------------------------------+
+| T           | - `TRUE`                                   |
++-------------+--------------------------------------------+
 
 If you redefine these objects, it will mask their original meaning(s).
 
@@ -46,38 +58,55 @@ If you redefine these objects, it will mask their original meaning(s).
 
 Common arithmetic operators include:
 
-| Operator | Meaning |
-|----------|---------|
-| `+` | + |
-| `-` | - |
-| `*` | × |
-| `/` | ÷ |
-| `^` | ^ |
-| `sqrt()` | √ |
-| `log()` | ln() |
++------------+---------+
+| Operator   | Meaning |
++============+=========+
+| `+`        | \+      |
++------------+---------+
+| `-`        | \-      |
++------------+---------+
+| `*`        | ×       |
++------------+---------+
+| `/`        | ÷       |
++------------+---------+
+| `^`        | ^       |
++------------+---------+
+| `sqrt()`   | √       |
++------------+---------+
+| `log()`    | ln()    |
++------------+---------+
 
 
 ### Relational operators
 
 Relational operators compare two values and return `TRUE`, `FALSE`, or `NA`. Common relational operators include:
 
-| Operator | Meaning | Example |
-|----------|---------|---------|
-| `>`, `>=` | >, ≥ | `1 > 2` is `FALSE` |
-| `<`, `<=` | <, ≤ | `1 <= 2` is `TRUE` |
-| `==`, `!=` | =, ≠ | `1 == 2` is `FALSE` |
-| `%in%` | Contained in a vector or list | `1 %in% c(1,2)` is `TRUE` |
++------------------+-------------------------------+-------------------------------+
+| Operator         | Meaning                       | Example                       |
++==================+===============================+===============================+
+| `>`, `>=`        | >, ≥                          | `1 > 2` is `FALSE`            |
++------------------+-------------------------------+-------------------------------+
+| `<`, `<=`        | <, ≤                          | `1 <= 2` is `TRUE`            |
++------------------+-------------------------------+-------------------------------+
+| `==`, `!=`       | =, ≠                          | `1 == 2` is `FALSE`           |
++------------------+-------------------------------+-------------------------------+
+| `%in%`           | Contained in a vector or list | `1 %in% c(1,2)` is `TRUE`     |
++------------------+-------------------------------+-------------------------------+
 
 
 ### Logical operators
 
 Logical operators combine or negate logical ("Boolean") values. They also return `TRUE`, `FALSE`, or `NA`. Common logical operators include:
 
-| Operator | Meaning | Example |
-|----------|---------|---------|
-| `&` | AND | `1>2 & 3<4` is `FALSE` |
-| `|` | OR | `1>2 | 3<4` is `TRUE` |
-| `!` | NOT | `!(1<2)` is `FALSE` |
++--------------+--------------+-------------------------------+
+| Operator     | Meaning      | Example                       |
++==============+==============+===============================+
+| `&`          | AND          | `1>2 & 3<4` is `FALSE`        |
++--------------+--------------+-------------------------------+
+| `|`          | OR           | `1>2 | 3<4` is `TRUE`         |
++--------------+--------------+-------------------------------+
+| `!`          | NOT          | `!(1<2)` is `FALSE`           |
++--------------+--------------+-------------------------------+
 
 
 ## Conditional statements
@@ -98,7 +127,7 @@ if (cases > 100) {
 
 ## Loops
 
-Conditional statements only evaluate one value at a time (`cases` above). Loops let us repeat the same decision rules across many values. For example, suppose we have the **vector** (defined in the [next chapter](06_objects.md)) as follows:
+Conditional statements only evaluate one value at a time (`cases` above). Loops let us repeat the same decision rules across many values. For example, suppose we have the **vector** (defined in the [next chapter](06_objects.qmd)) as follows:
 
 We can write a **for loop**:
 ```{r}

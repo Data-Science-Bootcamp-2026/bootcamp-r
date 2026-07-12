@@ -21,4 +21,6 @@ title: "In practice"
 - On the RAE, R is incredibly outdated
 - There is a pilot program (the Analytic Grid Pilot program) where the R version is somewhat more updated that can be used for ICES projects
 
+::: {.content-visible when-format="html"}
 ## References
+:::

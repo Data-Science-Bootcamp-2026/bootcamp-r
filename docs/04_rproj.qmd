@@ -20,16 +20,16 @@ A **repository** (aka "repo") is a place to store the files related to a project
 │   └── processed/
 ├── docs/
 │   ├── assets/
-|   |   ├── images/
-|   |   └── videos/
+│   │   ├── images/
+│   │   └── videos/
 │   ├── manuscript/
-|   |   ├── manuscript.qmd
-|   |   ├── american-medical-association.csl
-|   |   └── references.bib
+│   │   ├── manuscript.qmd
+│   │   ├── american-medical-association.csl
+│   │   └── references.bib
 │   ├── protocol/
-|   |   ├── manuscript.qmd
-|   |   ├── american-medical-association.csl
-|   |   └── references.bib
+│   │   ├── manuscript.qmd
+│   │   ├── american-medical-association.csl
+│   │   └── references.bib
 │   └── slides/
 ├── output/
 │   ├── figures/

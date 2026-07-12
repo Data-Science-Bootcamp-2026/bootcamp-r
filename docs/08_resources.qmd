@@ -5,3 +5,7 @@ nocite: |
 ---
 
 <div style="height: 1em;"></div>
+
+::: {.content-visible when-format="pdf"}
+# References {.unnumbered}
+:::

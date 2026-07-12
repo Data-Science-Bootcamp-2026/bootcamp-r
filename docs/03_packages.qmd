@@ -41,4 +41,6 @@ Because the Tidyverse is a collection of packages (`readr`, `dplyr`, `tidyr`, `g
 Alternatively, if you only need a specific function within a library, use the notation `package::function()` such as `readr::read_csv()`.
 
 
+::: {.content-visible when-format="html"}
 ## References
+:::

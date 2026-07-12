@@ -7,7 +7,7 @@ title: "R"
 
 ## Why R
 
-R is a programming language, but more than that, it is an interactive environment [@rfoundationwhat]. A typical R script is run line by line rather than compiled all at once. The [objects](06_objects.md) you create live in memory, allowing you to query, run, and tweak code continuously. 
+R is a programming language, but more than that, it is an interactive environment [@rfoundationwhat]. A typical R script is run line by line rather than compiled all at once. The [objects](06_objects.qmd) you create live in memory, allowing you to query, run, and tweak code continuously.
 
 R is designed by statisticians, for statisticians. It is very flexible, and because it is free and open source (we will define these concepts in Part 2 of the bootcamp) maintained by the R Core Team [@rfoundationcontributors], it is very popular -- especially in biostatistics and epidemiology. Contributors from around the world develop and maintain packages for others to use.
 
@@ -27,9 +27,12 @@ In this section of the bootcamp, we will see how R addresses points 1-3. In the 
 ## R app
 
 If you open the basic R app, you will see the R console.
-![R console](assets/images/r_console.png)
+
+![](assets/images/r_console.png)
 
 It is not pretty! Although it has some core functionalities, there are a number of quality of life improvements when using RStudio, which we will explore next.
 
 
+::: {.content-visible when-format="html"}
 ## References
+:::

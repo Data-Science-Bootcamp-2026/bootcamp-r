@@ -21,10 +21,22 @@ In the world of regulatory drug submissions, SAS has been dominant. Regulatory a
 
 SAS and R represent different ends of a spectrum, each with pros and cons [@kenneth2023sas]:
 
-| Language | Characteristics | Pros | Cons |
-|--------|-----------|----------------|----------------|
-| **SAS** | - Proprietary<br>- Paid | - Reputation for regulatory compliance<br>- Standardized procedures<br>- Rigorously tested<br>- Vendor handles updates, documentation, abd support | - Expensive<br>- Rigid<br>- Not as extensible |
-| **R** | - Open source<br>- Free | - Accessible<br>- Flexible<br>- Extensible<br>- Rich community contributions | - Might not be as rigorously tested; dependencies may be at different stages of development<br>- The burden to ensure regulatory compliance falls on companies |
++------------+----------------------+----------------------------------------+------------------------------------------+
+| Language   | Characteristics      | Pros                                   | Cons                                     |
++============+======================+========================================+==========================================+
+| **SAS**    | - Proprietary\       | - Reputation for regulatory\           | - Expensive\                             |
+|            | - Paid               |   compliance\                          | - Rigid\                                 |
+|            |                      | - Standardized procedures\             | - Not as extensible                      |
+|            |                      | - Rigorously tested\                   |                                          |
+|            |                      | - Vendor handles updates,\             |                                          |
+|            |                      |   documentation, and support           |                                          |
++------------+----------------------+----------------------------------------+------------------------------------------+
+| **R**      | - Open source\       | - Accessible\                          | - Might not be as rigorously tested\     |
+|            | - Free               | - Flexible\                            | - Dependencies may be at different\      |
+|            |                      | - Extensible\                          |   stages of development\                 |
+|            |                      | - Rich community contributions         | - Companies bear responsibility for\     |
+|            |                      |                                        |   regulatory compliance                  |
++------------+----------------------+----------------------------------------+------------------------------------------+
 
 What is changing is the R ecosystem. The [Pharmaverse](https://pharmaverse.org/) (conceived in 2020) brings together people from different pharmaceutical companies to collaboratively develop regulatory-compliant R packages [@eugenio2023pharmaverse]. Instead of the burden falling on each company to validate their code, often duplicating work in silos, they now work together to make standardized workflows.
 
@@ -44,4 +56,6 @@ The shift will take time. Institutions will have to train and hire staff, build 
 All instructional material in this book was written by the author. Generative AI did not determine the content or technical recommendations presented here, though OpenAI ChatGPT (GPT-5.6-Sol, reasoning: instant) was used for proofreading. OpenAI Codex (GPT-5.6-Terra, reasoning: high) was used to help with formatting the material as a Quarto book. The author reviewed, edited, and verified the proofreading and code as needed and takes full responsibility for the final product.
 
 
+::: {.content-visible when-format="html"}
 ## References
+:::

@@ -11,17 +11,30 @@ RStudio is an integrated development environment (IDE) for R. It offers a conven
 
 Compared to the basic R app, RStudio offers many more functionalities, including:
 
-| Feature | R app | RStudio |
-|---------|-------|---------|
-| [Panes (below)](02_rstudio.md#panes) | - Console<br>- Editor (separate window)<br>- Plots/help (separate window) | - Console<br>- Editor<br>- Plots/help<br>- Environment |
-| Syntax highlighting | ~ | ✓ |
-| Code completion | ~ | ✓ |
-| Debugger | ~ | ✓ |
-| Package manager | ~ | ✓ |
-| [R projects](04_rproj.md) | ✗ | ✓ |
-| Git integration* | ✗ | ✓ |
-| R markdown support* | ✗ | ✓ |
-| Quarto support* | ✗ | ✓ |
++----------------------------------------+----------------------------------+--------------------+
+| Feature                                | R app                            | RStudio            |
++========================================+==================================+====================+
+| [Panes (below)](02_rstudio.qmd#panes)  | - Console\                       | - Console\         |
+|                                        | - Editor (separate window)\      | - Editor\          |
+|                                        | - Plots/help (separate window)   | - Plots/help\      |
+|                                        |                                  | - Environment      |
++----------------------------------------+----------------------------------+--------------------+
+| Syntax highlighting                    | ~                                | ✓                  |
++----------------------------------------+----------------------------------+--------------------+
+| Code completion                        | ~                                | ✓                  |
++----------------------------------------+----------------------------------+--------------------+
+| Debugger                               | ~                                | ✓                  |
++----------------------------------------+----------------------------------+--------------------+
+| Package manager                        | ~                                | ✓                  |
++----------------------------------------+----------------------------------+--------------------+
+| [R projects](04_rproj.qmd)             | ✗                                | ✓                  |
++----------------------------------------+----------------------------------+--------------------+
+| Git integration*                       | ✗                                | ✓                  |
++----------------------------------------+----------------------------------+--------------------+
+| R markdown support*                    | ✗                                | ✓                  |
++----------------------------------------+----------------------------------+--------------------+
+| Quarto support*                        | ✗                                | ✓                  |
++----------------------------------------+----------------------------------+--------------------+
 
 \* *We will discuss these more in Part 2 of the bootcamp. RStudio is not the only way to integrate with Git, write R markdown, or render using Quarto.*
 
@@ -36,7 +49,7 @@ Compared to the basic R app, RStudio offers many more functionalities, including
 
 ![Environment pane: browse objects created in your workspace, R history, Git integration, etc.](assets/images/rstudio_env.png)
 
-![Other pane: browse files, view plots, manage packages, view help, etc.](assets/images/rstudio_other.png)
+![Other pane: browse files, view plots, manage packages, view help, and more](assets/images/rstudio_other.png)
 
 
 
@@ -48,16 +61,25 @@ Compared to the basic R app, RStudio offers many more functionalities, including
 
 Some common shortcuts:
 
-| Shortcut | Windows | macOS |
-|----------|---------|---------|
-| New R script | `Ctrl+Shift+N` | `Command+Shift+N` |
-| Move cursor to Editor pane | `Ctrl+1` | `Control+1` |
-| Move cursor to Console pane | `Ctrl+2` | `Control+2` |
-| Run selected | `Ctrl+Enter` | `Command+Enter` |
-| Run all | `Ctrl+Alt+R` | `Option+Command+R` |
-| Run from beginning to line | `Ctrl+Alt+B` | `Option+Command+B` |
-| Comment/uncomment | `Ctrl+Shift+C` | `Command+Shift+C` |
-| Reflow comments within margins | `Ctrl+Shift+/` | `Control+Shift+/` |
++----------------------------------+------------------+----------------------+
+| Shortcut                         | Windows          | macOS                |
++==================================+==================+======================+
+| New R script                     | `Ctrl+Shift+N`   | `Command+Shift+N`    |
++----------------------------------+------------------+----------------------+
+| Move cursor to Editor pane       | `Ctrl+1`         | `Control+1`          |
++----------------------------------+------------------+----------------------+
+| Move cursor to Console pane      | `Ctrl+2`         | `Control+2`          |
++----------------------------------+------------------+----------------------+
+| Run selected                     | `Ctrl+Enter`     | `Command+Enter`      |
++----------------------------------+------------------+----------------------+
+| Run all                          | `Ctrl+Alt+R`     | `Option+Command+R`   |
++----------------------------------+------------------+----------------------+
+| Run from beginning to line       | `Ctrl+Alt+B`     | `Option+Command+B`   |
++----------------------------------+------------------+----------------------+
+| Comment/uncomment                | `Ctrl+Shift+C`   | `Command+Shift+C`    |
++----------------------------------+------------------+----------------------+
+| Reflow comments within margins   | `Ctrl+Shift+/`   | `Control+Shift+/`    |
++----------------------------------+------------------+----------------------+
 
 ::: {.callout-tip}
 ## **Tip**
@@ -81,4 +103,6 @@ To change RStudio to dark theme:
 :::
 
 
+::: {.content-visible when-format="html"}
 ## References
+:::
