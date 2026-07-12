@@ -1,0 +1,10 @@
+---
+nocite: |
+    @chambers2014objectoriented
+    @grolemundhandson
+    @wickhamdata
+---
+
+# [Readings]{.content-visible unless-format="pdf"}[References]{.content-visible when-format="pdf"} {#readings}
+
+<div style="height: 1em;"></div>

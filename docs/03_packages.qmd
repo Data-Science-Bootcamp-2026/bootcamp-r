@@ -9,7 +9,7 @@ title: "Packages"
 
 A package is a bundle of R code, documentation (e.g., what you would see on a Help page), and sometimes data. Some packages come out of the box with **base R**, and you can already do basic statistics and graphics.
 
-But base R may not be optimally efficient, flexible, or readable; custom functions are frequently needed. Contributors around the world create and maintain **custom extensions** to base R that are held to rigorous standards set by the R Core Team [@rcoreteam2026writing] and the Comprehensive R Archive Network (CRAN) [@crancontributed]. There are currently 24,259 packages on CRAN with many more archived ones that are no longer actively maintained [@crancontributed].
+But base R may not be optimally efficient, flexible, or readable; custom functions are frequently needed. Contributors around the world create and maintain **custom extensions** to base R that are held to rigorous standards set by the R Core Team [@rcoreteam2026writing] and the Comprehensive R Archive Network (CRAN) [@crancontributed]. There are currently 24,259 packages on CRAN with many more archived ones that are no longer actively maintained [@crancontributed]. Packages can also be found on [R-Forge](https://r-forge.r-project.org/), GitHub, and more.
 
 ::: {.callout-note}
 ## **Note:** using external packages can have drawbacks...
@@ -34,11 +34,16 @@ To install packages, use the `install.packages()` function, passing the name of 
 For general use (i.e., if you are not concerned about dependency management), you only need to install a package once. Therefore, do not write `install.packages()` in your scripts. Installing packages is a setup step, not part of the analysis itself. If you are sharing your scripts, it is also considered poor etiquette to trigger unnecessary or unwanted installations on another user's system.
 :::
 
-But to use its contents, you still need to load the packages at the start of each new session, using the `library()` function, passing the name of the package *without quotes*. For example, `library(tidyverse)`.
+
+## Loading packages
+
+Just because you installed a package does not mean it is available for use in your current session. A **library** is a directory on your computer that contains installed packages. Load packages for each new session using the `library()` function, passing the name of the package *without quotes*. For example, `library(tidyverse)`.
 
 Because the Tidyverse is a collection of packages (`readr`, `dplyr`, `tidyr`, `ggplot2`, etc.), loading it will load all constituent packages. However, you rarely need to use all Tidyverse packages in a given script. Only loading the packages you need can make startup faster and avoid namespace conflicts if two packages happen to have the same function name. To load individual packages, run `library(readr)` for example, and then you can use any function included in the package such sa `read_csv()`.
 
 Alternatively, if you only need a specific function within a library, use the notation `package::function()` such as `readr::read_csv()`.
+
+For updating packages, please see [Chapter 8](07_in_practice.qmd#updating-r-packages).
 
 
 ::: {.content-visible when-format="html"}

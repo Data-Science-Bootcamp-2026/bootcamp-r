@@ -10,7 +10,7 @@ project:
     - 05_basics.qmd
     - 06_objects.qmd
     - 07_in_practice.qmd
-    - 08_resources.qmd
+    - 08_readings.qmd
 
 book:
   title: "DATA SCIENCE BOOTCAMP 2026"
@@ -31,7 +31,7 @@ book:
     - 05_basics.qmd
     - 06_objects.qmd
     - 07_in_practice.qmd
-    - 08_resources.qmd
+    - 08_readings.qmd
   sidebar:
     title: "Bootcamp Part 1: R"
     style: docked
@@ -54,6 +54,8 @@ format:
     page-layout: article
     link-external-newwindow: true
   pdf:
+    filters:
+      - pdf-readings-references.lua
     documentclass: scrreprt
     number-sections: true
     toc: true

@@ -11,30 +11,30 @@ RStudio is an integrated development environment (IDE) for R. It offers a conven
 
 Compared to the basic R app, RStudio offers many more functionalities, including:
 
-+----------------------------------------+----------------------------------+--------------------+
-| Feature                                | R app                            | RStudio            |
-+========================================+==================================+====================+
-| [Panes (below)](02_rstudio.qmd#panes)  | - Console\                       | - Console\         |
-|                                        | - Editor (separate window)\      | - Editor\          |
-|                                        | - Plots/help (separate window)   | - Plots/help\      |
-|                                        |                                  | - Environment      |
-+----------------------------------------+----------------------------------+--------------------+
-| Syntax highlighting                    | ~                                | ✓                  |
-+----------------------------------------+----------------------------------+--------------------+
-| Code completion                        | ~                                | ✓                  |
-+----------------------------------------+----------------------------------+--------------------+
-| Debugger                               | ~                                | ✓                  |
-+----------------------------------------+----------------------------------+--------------------+
-| Package manager                        | ~                                | ✓                  |
-+----------------------------------------+----------------------------------+--------------------+
-| [R projects](04_rproj.qmd)             | ✗                                | ✓                  |
-+----------------------------------------+----------------------------------+--------------------+
-| Git integration*                       | ✗                                | ✓                  |
-+----------------------------------------+----------------------------------+--------------------+
-| R markdown support*                    | ✗                                | ✓                  |
-+----------------------------------------+----------------------------------+--------------------+
-| Quarto support*                        | ✗                                | ✓                  |
-+----------------------------------------+----------------------------------+--------------------+
++----------------------------------------+----------------------------------+----------------------------------+
+| Feature                                | R app                            | RStudio                          |
++========================================+==================================+==================================+
+| [Panes (below)](02_rstudio.qmd#panes)  | - Console\                       | - Console\                       |
+|                                        | - Editor (separate window)\      | - Editor\                        |
+|                                        | - Plots/help (separate window)   | - Plots/help\                    |
+|                                        |                                  | - Environment                    |
++----------------------------------------+----------------------------------+----------------------------------+
+| Syntax highlighting                    | ~                                | $\checkmark$                     |
++----------------------------------------+----------------------------------+----------------------------------+
+| Code completion                        | ~                                | $\checkmark$                     |
++----------------------------------------+----------------------------------+----------------------------------+
+| Debugger                               | ~                                | $\checkmark$                     |
++----------------------------------------+----------------------------------+----------------------------------+
+| Package manager                        | ~                                | $\checkmark$                     |
++----------------------------------------+----------------------------------+----------------------------------+
+| [R projects](04_rproj.qmd)             | $\times$                         | $\checkmark$                     |
++----------------------------------------+----------------------------------+----------------------------------+
+| Git integration*                       | $\times$                         | $\checkmark$                     |
++----------------------------------------+----------------------------------+----------------------------------+
+| R markdown support*                    | $\times$                         | $\checkmark$                     |
++----------------------------------------+----------------------------------+----------------------------------+
+| Quarto support*                        | $\times$                         | $\checkmark$                     |
++----------------------------------------+----------------------------------+----------------------------------+
 
 \* *We will discuss these more in Part 2 of the bootcamp. RStudio is not the only way to integrate with Git, write R markdown, or render using Quarto.*
 
@@ -47,7 +47,7 @@ Compared to the basic R app, RStudio offers many more functionalities, including
 
 ![Editor pane: write reusable scripts, and can view data structures (not shown in image)](assets/images/rstudio_editor.png)
 
-![Environment pane: browse objects created in your workspace, R history, Git integration, etc.](assets/images/rstudio_env.png)
+![Environment pane: browse objects created in your workspace, R history, Git integration, and more](assets/images/rstudio_env.png)
 
 ![Other pane: browse files, view plots, manage packages, view help, and more](assets/images/rstudio_other.png)
 
