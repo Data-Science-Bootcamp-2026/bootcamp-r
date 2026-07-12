@@ -8,6 +8,10 @@ body {
   line-height: 1.75;
 }
 
+#quarto-document-content p {
+  text-wrap: pretty;
+}
+
 @media (min-width: 1400px) {
   body.docked #quarto-content {
     margin-left: auto;
@@ -55,6 +59,11 @@ body {
   padding-left: 0;
 }
 
+#quarto-document-content .quarto-figure figcaption {
+  text-align: center;
+}
+
+/* Formatting of in-line images in headings and body */
 #why-r > h2::after,
 #why-rstudio > h2::after,
 #tidyverse > h2::after {

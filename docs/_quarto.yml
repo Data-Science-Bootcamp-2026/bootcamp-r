@@ -7,7 +7,7 @@ project:
     - 02_rstudio.md
     - 03_packages.md
     - 04_rproj.md
-    - 05_basics.md
+    - 05_basics.qmd
     - 06_objects.md
     - 07_in_practice.md
     - 08_resources.md
@@ -28,7 +28,7 @@ book:
     - 02_rstudio.md
     - 03_packages.md
     - 04_rproj.md
-    - 05_basics.md
+    - 05_basics.qmd
     - 06_objects.md
     - 07_in_practice.md
     - 08_resources.md

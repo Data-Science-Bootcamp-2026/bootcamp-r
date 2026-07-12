@@ -1,11 +1,7 @@
 ---
 title: "Resources"
+nocite: |
+    @wickhamdata
 ---
 
-<div style="height: 2em;"></div>
-
-
-## General reading
-
-
-## RStudio guides
+<div style="height: 1em;"></div>

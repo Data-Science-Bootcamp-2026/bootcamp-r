@@ -1,0 +1,132 @@
+---
+title: "Basics"
+engine: knitr
+---
+
+<div style="height: 2em;"></div>
+
+
+## Operators
+
+### Assignment operators
+
+```{r}
+x <- 1
+y <- 2
+z <- x + y
+```
+
+`<-` assigns a value to an object name. `->` is allowed too but is uncommon due to readability. `=` is also allowed but discouraged as it has more than one meaning.
+
+Object names must start with a letter, and only contain:
+
+- Letters (case-sensitive)
+- Numbers
+- Underscores
+- Periods
+
+Avoid the following single-character object names:
+
+| Character | Special meaning(s) |
+|-----------|--------------------|
+| `.` | - In formulae, it means all other variables<br>- Can be used as a placeholder |
+| c | - Combine |
+| q | - Quit |
+| t | - Matrix transpose |
+| C | - Set contrasts for a factor |
+| D | - Symbolic and algorithmic derivatives |
+| F | - `FALSE` |
+| I | - Treat an object as is |
+| T | - `TRUE` |
+
+If you redefine these objects, it will mask their original meaning(s).
+
+
+### Arithmetic operators
+
+Common arithmetic operators include:
+
+| Operator | Meaning |
+|----------|---------|
+| `+` | + |
+| `-` | - |
+| `*` | × |
+| `/` | ÷ |
+| `^` | ^ |
+| `sqrt()` | √ |
+| `log()` | ln() |
+
+
+### Relational operators
+
+Relational operators compare two values and return `TRUE`, `FALSE`, or `NA`. Common relational operators include:
+
+| Operator | Meaning | Example |
+|----------|---------|---------|
+| `>`, `>=` | >, ≥ | `1 > 2` is `FALSE` |
+| `<`, `<=` | <, ≤ | `1 <= 2` is `TRUE` |
+| `==`, `!=` | =, ≠ | `1 == 2` is `FALSE` |
+| `%in%` | Contained in a vector or list | `1 %in% c(1,2)` is `TRUE` |
+
+
+### Logical operators
+
+Logical operators combine or negate logical ("Boolean") values. They also return `TRUE`, `FALSE`, or `NA`. Common logical operators include:
+
+| Operator | Meaning | Example |
+|----------|---------|---------|
+| `&` | AND | `1>2 & 3<4` is `FALSE` |
+| `|` | OR | `1>2 | 3<4` is `TRUE` |
+| `!` | NOT | `!(1<2)` is `FALSE` |
+
+
+## Conditional statements
+
+Conditional statements (if a condition is met then do this, else do that) help us program our decisions according to logical values.
+
+```{r}
+cases <- 75
+
+if (cases > 100) {
+  print("Emergency")
+} else if (cases > 50) {
+  print("Warning")
+} else {
+  print("Caution")
+}
+```
+
+## Loops
+
+Conditional statements only evaluate one value at a time (`cases` above). Loops let us repeat the same decision rules across many values. For example, suppose we have the **vector** (defined in the [next chapter](06_objects.md)) as follows:
+
+We can write a **for loop**:
+```{r}
+cases <- c(25, 75, 125)
+
+for (x in cases) {
+  if (x > 100) {
+    print("Emergency")
+  } else if (x > 50) {
+    print("Warning")
+  } else {
+    print("Caution")
+  }
+}
+```
+
+For loops run for a predetermined number of times (e.g., once for each value in a vector). By contrast, **while loops** run until a condition is no longer met:
+```{r}
+cases <- 125
+
+while (cases >= 0) {
+  if (cases > 100) {
+    print("Emergency")
+  } else if (cases > 50) {
+    print("Warning")
+  } else {
+    print("Caution")
+  }
+  cases <- cases - 25
+}
+```
