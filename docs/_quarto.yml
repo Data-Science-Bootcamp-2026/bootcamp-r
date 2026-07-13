@@ -5,8 +5,8 @@ project:
     - index.qmd
     - 01_r.qmd
     - 02_rstudio.qmd
-    - 03_packages.qmd
-    - 04_rproj.qmd
+    - 03_rproj.qmd
+    - 04_packages.qmd
     - 05_basics.qmd
     - 06_objects.qmd
     - 07_in_practice.qmd
@@ -26,8 +26,8 @@ book:
     - index.qmd
     - 01_r.qmd
     - 02_rstudio.qmd
-    - 03_packages.qmd
-    - 04_rproj.qmd
+    - 03_rproj.qmd
+    - 04_packages.qmd
     - 05_basics.qmd
     - 06_objects.qmd
     - 07_in_practice.qmd
@@ -36,9 +36,13 @@ book:
     title: "Bootcamp Part 1: R"
     style: docked
     search: true
+    tools:
+      - icon: easel
+        text: "Presentation slides"
+        href: slides.html
 
-bibliography: ../references.bib
-csl: ../american-medical-association.csl
+bibliography: references.bib
+csl: american-medical-association.csl
 notes-after-punctuation: true
 
 format:

@@ -27,7 +27,7 @@ Compared to the basic R app, RStudio offers many more functionalities, including
 +----------------------------------------+----------------------------------+----------------------------------+
 | Package manager                        | ~                                | $\checkmark$                     |
 +----------------------------------------+----------------------------------+----------------------------------+
-| [R projects](04_rproj.qmd)             | $\times$                         | $\checkmark$                     |
+| [R projects](03_rproj.qmd)             | $\times$                         | $\checkmark$                     |
 +----------------------------------------+----------------------------------+----------------------------------+
 | Git integration*                       | $\times$                         | $\checkmark$                     |
 +----------------------------------------+----------------------------------+----------------------------------+
@@ -45,7 +45,7 @@ Compared to the basic R app, RStudio offers many more functionalities, including
 
 ![Console pane: command-line interface](assets/images/rstudio_console.png)
 
-![Editor pane: write reusable scripts, and can view data structures (not shown in image)](assets/images/rstudio_editor.png)
+![Editor pane: write reusable scripts, and can view data structures (latter is not shown in image)](assets/images/rstudio_editor.png)
 
 ![Environment pane: browse objects created in your workspace, R history, Git integration, and more](assets/images/rstudio_env.png)
 
