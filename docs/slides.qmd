@@ -697,7 +697,10 @@ A reproducible workflow records **data, code, versions, and decisions**.
 <script>
 window.addEventListener("load", function () {
   function fitReferenceList() {
-    const slide = Reveal.getCurrentSlide();
+    const isPrintView = window.location.search.includes("print-pdf");
+    const slide = isPrintView
+      ? document.getElementById("refs")
+      : Reveal.getCurrentSlide();
     if (!slide || slide.id !== "refs") return;
 
     const references = slide.querySelector(":scope > .references");

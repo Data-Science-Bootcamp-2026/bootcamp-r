@@ -55,6 +55,10 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
+      - name: Set up Chrome
+        id: setup-chrome
+        uses: browser-actions/setup-chrome@v1
+
       - name: Install TinyTeX
         run: quarto install tinytex --update-path
 
@@ -67,6 +71,18 @@ jobs:
           cp docs/slides.html docs/_book/slides.html
           cp docs/slides.css docs/_book/slides.css
           cp -R docs/slides_files docs/_book/slides_files
+
+      - name: Render slides PDF
+        run: |
+          "${{ steps.setup-chrome.outputs.chrome-path }}" \
+            --headless \
+            --disable-gpu \
+            --allow-file-access-from-files \
+            --virtual-time-budget=10000 \
+            --no-pdf-header-footer \
+            --print-to-pdf=docs/slides.pdf \
+            "file://${GITHUB_WORKSPACE}/docs/slides.html?print-pdf"
+          cp docs/slides.pdf docs/_book/slides.pdf
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
