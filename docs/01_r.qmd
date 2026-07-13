@@ -13,7 +13,7 @@ R is designed by statisticians, for statisticians. It is very flexible, and beca
 
 Data scientists often use a mix of programming languages. Each has its strengths. For example, R tends to be better for data processing and visualization, whereas Python tends to be better for machine learning.
 
-But why write code at all? Well, think of how you would run a time series analysis on Microsoft Excel. The raw dataset you receive may contain typos, missingness, duplicates, and formatting errors. You may have to manually edit some cells. You may also receive multiple datasets to merge, rows to filter, and columns to create or remove or transform.
+But why write code at all? Well, think of how you would perform data analysis on Microsoft Excel. The raw dataset you receive may contain typos, missingness, duplicates, and formatting errors. You may have to manually edit some cells. You may also receive multiple datasets to merge, rows to filter, and columns to create or remove or transform.
 
 1. How vulnerable is the workflow to human error?
 2. How much time is spent on manual data cleaning?

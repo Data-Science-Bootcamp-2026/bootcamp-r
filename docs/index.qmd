@@ -50,7 +50,7 @@ The shift will take time. Institutions will have to train and hire staff, build 
 
 ## Declaration of generative AI and AI-assisted technologies
 
-All instructional material in this book was written by the author. Generative AI did not determine the content or technical recommendations presented here, though OpenAI ChatGPT (GPT-5.6-Sol, reasoning: instant) was used for proofreading. OpenAI Codex (GPT-5.6-Terra, reasoning: high) was used to help with formatting the material as a Quarto book. The author reviewed, edited, and verified the proofreading and code as needed and takes full responsibility for the final product.
+All instructional material in this book was written by the author. Generative AI did not determine the content or technical recommendations presented here, though OpenAI ChatGPT (GPT-5.6-Sol, reasoning: instant) helped proofread. OpenAI Codex (GPT-5.6-Terra, reasoning: high) helped format the book. The author reviewed, edited, and verified the suggestions as needed and takes full responsibility for the final product.
 
 
 ::: {.content-visible when-format="html"}
