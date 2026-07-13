@@ -19,24 +19,21 @@ date-format: long
 
 In the world of regulatory drug submissions, SAS has been dominant. Regulatory agencies (e.g., U.S. FDA, Health Canada) allow other languages such as R too, but historical concerns about validity have held R back. Yet more and more, the U.S. FDA is opening the door to submissions in R, and other regulatory agencies may soon follow suit.
 
-SAS and R represent different ends of a spectrum, each with pros and cons [@kenneth2023sas]:
+SAS and R represent different ends of a spectrum, and their philosophies have pros and cons [@kenneth2023sas]:
 
-+------------+----------------------+----------------------------------------+------------------------------------------+
-| Language   | Characteristics      | Pros                                   | Cons                                     |
-+============+======================+========================================+==========================================+
-| **SAS**    | - Proprietary\       | - Reputation for regulatory\           | - Expensive\                             |
-|            | - Paid               |   compliance\                          | - Rigid\                                 |
-|            |                      | - Standardized procedures\             | - Not as extensible                      |
-|            |                      | - Rigorously tested\                   |                                          |
-|            |                      | - Vendor handles updates,\             |                                          |
-|            |                      |   documentation, and support           |                                          |
-+------------+----------------------+----------------------------------------+------------------------------------------+
-| **R**      | - Open source\       | - Accessible\                          | - Might not be as rigorously tested\     |
-|            | - Free               | - Flexible\                            | - Dependencies may be at different\      |
-|            |                      | - Extensible\                          |   stages of development\                 |
-|            |                      | - Rich community contributions         | - Companies bear responsibility for\     |
-|            |                      |                                        |   regulatory compliance                  |
-+------------+----------------------+----------------------------------------+------------------------------------------+
++------------+----------------------+-----------------------------------------+---------------------------------------------+
+| Language   | Characteristics      | Pros                                    | Cons                                        |
++============+======================+=========================================+=============================================+
+| **SAS**    | - Proprietary\       | - Reputation for regulatory compliance\ | - Expensive\                                |
+|            | - Paid               | - Standardized procedures\              | - Rigid\                                    |
+|            |                      | - Vendor handles validation, updates,   | - Not as extensible                         |
+|            |                      |   documentation, and support            |                                             |
++------------+----------------------+-----------------------------------------+---------------------------------------------+
+| **R**      | - Open source\       | - Accessible\                           | - Validation, qualtiy, and support may vary |
+|            | - Free               | - Flexible\                             |                                             |
+|            |                      | - Extensible\                           |                                             |
+|            |                      | - Rich community contributions          |                                             |
++------------+----------------------+-----------------------------------------+---------------------------------------------+
 
 What is changing is the R ecosystem. The [Pharmaverse](https://pharmaverse.org/) (conceived in 2020) brings together people from different pharmaceutical companies to collaboratively develop regulatory-compliant R packages [@eugenio2023pharmaverse]. Instead of the burden falling on each company to validate their code, often duplicating work in silos, they now work together to make standardized workflows.
 
@@ -46,7 +43,7 @@ What is changing is the R ecosystem. The [Pharmaverse](https://pharmaverse.org/)
 
 As pharmacoepidemiologists, we often work on *post-market* evaluations of drugs instead of new drug submissions (though the latter is gaining traction). However, pharmacoepidemiology has historically been shaped by similar motivations for validity, privacy, and security. Institutions like the U.S. Centers for Disease Control and Prevention (CDC) and Ontario ICES have long favoured SAS. With well-established infrastructure and reusable macros, it often feels like the path of least resistance for students and analysts to learn SAS whenever they want to use protected public health data.
 
-As technology moves at an ever-increasing pace, SAS is falling behind. It lacks the flexibility and extensibility that R offers; scientists have to work within vendor-locked SAS workflows. And with increasing use of machine learning, Python (another open source language) is becoming popular as well. The shifting tides to open source is exacerbated by large language models (LLMs) like OpenAI's GPT and Anthropic's Claude, which have powerful coding capabilities [@favaro2026when], but they need to be trained on publicly available data. Because SAS is siloed, LLMs have less code and documentation to train on, resulting in less support [@pereira2026vs].
+As technology moves at an ever-increasing pace, SAS is falling behind. It lacks the flexibility and extensibility that R offers; scientists have to work within vendor-locked SAS workflows. And with increasing use of machine learning, Python (another open source language) is becoming popular as well. The shifting tides to open source is exacerbated by large language models (LLMs) like OpenAI's GPT and Anthropic's Claude, which have powerful coding capabilities [@favaro2026when], but they need to be trained on publicly available data. Because of the proprietary nature of SAS, LLMs have less code and documentation to train on, which may result in less support [@pereira2026vs].
 
 The shift will take time. Institutions will have to train and hire staff, build new infrastructure, and develop governance policies. There is no better time to learn R than during this transition period!
 

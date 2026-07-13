@@ -9,7 +9,7 @@ title: "Packages"
 
 A package is a bundle of R code, documentation (e.g., what you would see on a Help page), and sometimes data. Some packages come out of the box with **base R**, and you can already do basic statistics and graphics.
 
-But base R may not be optimally efficient, flexible, or readable; custom functions are frequently needed. Contributors around the world create and maintain **custom extensions** to base R that are held to rigorous standards set by the R Core Team [@rcoreteam2026writing] and the Comprehensive R Archive Network (CRAN) [@crancontributed]. There are currently 24,259 packages on CRAN with many more archived ones that are no longer actively maintained [@crancontributed]. Packages can also be found on [R-Forge](https://r-forge.r-project.org/), GitHub, and more.
+But base R may not be optimally efficient, flexible, or readable; custom functions are frequently needed. Contributors around the world create and maintain **custom extensions** to base R according to guidance from the R Core Team [@rcoreteam2026writing] and standards set by the Comprehensive R Archive Network (CRAN) [@crancontributed]. There are currently 24,259 packages on CRAN with many more archived ones that are no longer actively maintained [@crancontributed]. Other packages can be found on [R-Forge](https://r-forge.r-project.org/), GitHub, and more.
 
 ::: {.callout-note}
 ## **Note:** using external packages can have drawbacks...
@@ -23,7 +23,7 @@ But base R may not be optimally efficient, flexible, or readable; custom functio
 
 ## Tidyverse
 
-The [Tidyverse](https://tidyverse.org/) is a very popular collection of packages that are frequently used in data science. These packages share an underlying design philosophy, grammar, and data structures. It is often more efficient than base R and has clearer syntax. The Tidyverse was primarily developed by Hadley Wickham, who is currently Chief Scientist at Posit (the company behind RStudio). His book, "R for Data Science" book (free) is a must-read and introduces the Tidyverse [@wickhamdata].
+The [Tidyverse](https://tidyverse.org/) is a very popular collection of packages that are frequently used in data science. These packages share an underlying design philosophy, grammar, and data structures. It can be more efficient than base R and has clearer syntax. The Tidyverse was primarily developed by Hadley Wickham, who is currently Chief Scientist at Posit (the company behind RStudio). His book, "R for Data Science" book (free) is a must-read and introduces the Tidyverse [@wickhamdata].
 
 
 ## Installing packages
@@ -39,7 +39,7 @@ For general use (i.e., if you are not concerned about dependency management), yo
 
 Just because you installed a package does not mean it is available for use in your current session. A **library** is a directory on your computer that contains installed packages. Load packages for each new session using the `library()` function, passing the name of the package *without quotes*. For example, `library(tidyverse)`.
 
-Because the Tidyverse is a collection of packages (`readr`, `dplyr`, `tidyr`, `ggplot2`, etc.), loading it will load all constituent packages. However, you rarely need to use all Tidyverse packages in a given script. Only loading the packages you need can make startup faster and avoid namespace conflicts if two packages happen to have the same function name. To load individual packages, run `library(readr)` for example, and then you can use any function included in the package such sa `read_csv()`.
+Because the Tidyverse is a collection of packages (`readr`, `dplyr`, `tidyr`, `ggplot2`, etc.), loading it will load core constituent packages. However, you rarely need to use all Tidyverse packages in a given script. Only loading the packages you need can make startup faster and avoid namespace conflicts if two packages happen to have the same function name. To load individual packages, run `library(readr)` for example, and then you can use any function included in the package such as `read_csv()`.
 
 Alternatively, if you only need a specific function within a library, use the notation `package::function()` such as `readr::read_csv()`.
 

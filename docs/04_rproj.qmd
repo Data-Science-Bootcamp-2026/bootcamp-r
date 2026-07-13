@@ -43,7 +43,7 @@ A **repository** (aka "repo") is a place to store the files related to a project
 ```
 \* *This is the way I like to set up repositories. Feel free to set it up differently -- whatever works best for you and your team!*
 
-In contrast to relative paths (`./` and `../`), we may also use absolute paths like `C:\Users\your-name\Desktop\folder\file.csv` on Windows (which traditionally uses backslashes, but can handle forward slashes too) or `/Users/your-name/Desktop/folder/file.csv` on macOS. Notice that absolute paths are sensitive to the user's operating system, username, and wherever they decide to save the repostiroy, making them irreproducible for shared code on personal computers.
+In contrast to relative paths (`./` and `../`), we may also use absolute paths like `C:\Users\your-name\Desktop\folder\file.csv` on Windows (which traditionally uses backslashes, but can handle forward slashes too) or `/Users/your-name/Desktop/folder/file.csv` on macOS. Notice that absolute paths are sensitive to the user's operating system, username, and wherever they decide to save the repository, making them irreproducible for shared code on personal computers.
 
 ::: {.callout-tip}
 ## **Tip**
@@ -59,7 +59,7 @@ R projects (the `.Rproj` file you saw above) are one of the major advantages of 
 
 - Identifies the project root (i.e., the directory containing the `.Rproj` file) as the working directory
     - If you open the `.Rproj` file, RStudio will automatically set the project root as the working directory.
-    - Even if you do not open the `.Rproj` file, functions like `here::here()` can find the project root by searching for `.Rproj`.
+    - Even if you do not open the `.Rproj` file, functions like `here::here()` may find the project root by searching for `.Rproj`.
     - This eliminates the need for setting the working directory yourself (`setwd()`).
 - Improves portability by facilitating the use of relative paths
 - Stores project-specific settings such as workspace preferences, text encoding, and editor settings

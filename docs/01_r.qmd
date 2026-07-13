@@ -11,7 +11,7 @@ R is a programming language, but more than that, it is an interactive environmen
 
 R is designed by statisticians, for statisticians. It is very flexible, and because it is free and open source (we will define these concepts in Part 2 of the bootcamp) maintained by the R Core Team [@rfoundationcontributors], it is very popular -- especially in biostatistics and epidemiology. Contributors from around the world develop and maintain packages for others to use.
 
-Data scientists often use a mix of programmming languages. Each has its strengths. For example, R tends to be better for data processing and visualization, whereas Python tends to be better for machine learning.
+Data scientists often use a mix of programming languages. Each has its strengths. For example, R tends to be better for data processing and visualization, whereas Python tends to be better for machine learning.
 
 But why write code at all? Well, think of how you would run a time series analysis on Microsoft Excel. The raw dataset you receive may contain typos, missingness, duplicates, and formatting errors. You may have to manually edit some cells. You may also receive multiple datasets to merge, rows to filter, and columns to create or remove or transform.
 
