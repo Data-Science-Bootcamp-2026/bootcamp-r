@@ -24,9 +24,9 @@ Numbers, strings, functions, and everything else (even expressions for evaluatio
 +-----------+----------------------------------------------------------------+
 | Data type | Definition                                                     |
 +===========+================================================================+
-| Double    | Number with decimal points (default)                           |
+| Double    | Default numeric type (e.g., `1`, `1.5`)                        |
 +-----------+----------------------------------------------------------------+
-| Integer   | Number without decimal points (if explicitly defined)          |
+| Integer   | Whole number type (denoted by `L`, e.g., `1L`)                 |
 +-----------+----------------------------------------------------------------+
 | Logical   | Boolean (`TRUE` or `FALSE`)                                    |
 +-----------+----------------------------------------------------------------+
@@ -57,7 +57,7 @@ You can find an object’s type using `typeof()`. To check whether an object is 
 
 You can find an object's class using `class()`.
 
-For example, `1.2` is stored as type `double` and behaves as class `numeric`. And `as.Date("2026-07-15")` is also stored as type `double` but behaves as class `date`.
+For example, `1.2` is stored as type `double` and behaves as class `numeric`. And `as.Date("2026-07-15")` is also stored as type `double` but behaves as class `Date`.
 
 
 ## Data structures
@@ -150,7 +150,7 @@ my_df
 my_df[,2]
 my_df[1,2]
 
-# Find columsn and their elements by indexing their name
+# Find columns and their elements by indexing their name
 my_df$cases
 my_df$cases[1]
 
@@ -187,7 +187,7 @@ my_function(a=1, b=2)  # Or just my_function(1, 2)
 
 A function has **parameters** (`a` and `b`, above). When calling a function, you pass values for the parameters called **arguments** (`1` and `2`, above). This is where the `=` symbol is appropriate (why we avoid using `=` as an assignment operator).
 
-Functions do not have to `return` anything; they can also `print`, `write`, `plot`, etc. Technically, in the example above, R returns the value of the last evaluated expression anyway, so a `return` statement is not necessary, but it is good to be explicit.
+Functions return values, though for some functions like plotting and writing, the returned value is often invisible. Functions do not need to have an explicit `return` statement like in the example above. R returns the value of the last evaluated expression anyway, so a `return` statement is unnecessary, but it is good to be explicit.
 ```{r}
 # Equivalent function
 my_function <- function(a, b) {

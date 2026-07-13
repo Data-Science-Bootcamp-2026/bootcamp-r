@@ -20,7 +20,7 @@ Common tabular data formats include:
 
 ::: {.callout-caution}
 ## **Caution**
-Different data formats store missing data differently. In CSV, missingness is just blank. In Excel, missingness is an empty cell. In SAS, missingness is `.` (if numeric) or `""` (if categorical). In R, missingness is `NA`. Writing an R data frame that has missingness into Excel will make it appear as `"NA"`.
+Different data formats store missing data differently. In CSV, missingness is just blank. In Excel, missingness appears as an empty cell. In SAS, missingness is `.` (if numeric) or blank (if categorical). In R, missingness is `NA`. Opening a CSV with Excel will make missing values appear as `"NA"` even though it is actually blank in the CSV file.
 :::
 
 
@@ -57,10 +57,10 @@ Alternatively, if you want to use commands instead, then:
 2. Run `old.packages()` - this lists packages with updates available. It does not update anything yet, but lets you see what is outdated. The `Installed` column tells you what version you currently have. The `ReposVer` column tells you what version is available.
     - Note that running `old.packages()` may list more outdated packages than RStudio's **Update** button because they use different rules.
     - You can also run `packageStatus()` to get a numerical count of outdated packages in your libraries.
-3. Run `update.packages()` - this goes through each item on the list and asks you to confirm the update (Yes / No / Cancel). Cicking Cancel at any time will stop the process without updating anything.
+3. Run `update.packages()` - this goes through each item on the list and asks you to confirm the update (Yes / No / Cancel). Clicking Cancel at any time will stop the process without updating anything.
     - If you want it to update everything silently, run `update.packages(ask = FALSE)`
 
-*Note that simply running `install.packages()` for a package you already have installs a newer comptible version (if one is available). In that sense, it can also be used to update individual packages, although it is inconvenient for updating many packages. For example: `install.packages(c("dplyr", "magrittr"))`.*
+*Note that simply running `install.packages()` for a package you already have installs a newer compatible version (if one is available). In that sense, it can also be used to update individual packages, although it is inconvenient for updating many packages. For example: `install.packages(c("dplyr", "magrittr"))`.*
 
 :::
 

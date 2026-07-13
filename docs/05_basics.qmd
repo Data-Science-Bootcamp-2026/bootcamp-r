@@ -1,6 +1,5 @@
 ---
 title: "Basics"
-engine: knitr
 ---
 
 <div style="height: 2em;"></div>
@@ -18,12 +17,14 @@ z <- x + y
 
 `<-` assigns an object to a name. `->` is allowed too but is uncommon due to readability. `=` is also allowed but discouraged as it has more than one meaning.
 
-Object names must start with a letter, and only contain:
+Object names must only contain:
 
 - Letters (case-sensitive)
-- Numbers
+- Digits
 - Underscores
 - Periods
+
+Object names must not start with a digit or underscore, nor a period followed by a digit [@ethzurichquotes].
 
 Avoid the following single-character object names:
 
@@ -158,3 +159,9 @@ while (cases >= 0) {
   cases <- cases - 25
 }
 ```
+
+
+::: {.content-visible when-format="html"}
+## References
+:::
+

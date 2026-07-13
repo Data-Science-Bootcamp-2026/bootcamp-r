@@ -87,7 +87,7 @@ By default, RStudio preserves your workspace between sessions. This can encourag
 
 1. Go to **Tools > Global Options...**
 2. Click the **General** tab
-3. Uncheck **Restore .Rdata into workspace ta startup:**
+3. Uncheck **Restore .Rdata into workspace at startup:**
 4. Beside **Save workspace to .Rdata on exit:** select **Never**
 
 ![](assets/images/rstudio_rdata.png){width=400px}
