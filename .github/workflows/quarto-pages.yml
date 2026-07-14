@@ -76,6 +76,7 @@ jobs:
         run: |
           "${{ steps.setup-chrome.outputs.chrome-path }}" \
             --headless \
+            --no-sandbox \
             --disable-gpu \
             --allow-file-access-from-files \
             --virtual-time-budget=10000 \
