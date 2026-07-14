@@ -64,16 +64,18 @@ str(cohort_rds)
 # Compare the imported object classes. CSV is just a plain text file; Excel and
 # SAS store rich metadata about the column types, so you see a small difference
 # that indicates read_csv() had to guess the column type.
-sapply(
-  list(
-    csv_base = cohort_csv_base,
-    csv_readr = cohort_csv_readr,
-    xlsx = cohort_xlsx,
-    sas = cohort_sas,
-    rds = cohort_rds
-  ),
-  class
+cohort_files <- list(
+  csv_base = cohort_csv_base,
+  csv_readr = cohort_csv_readr,
+  xlsx = cohort_xlsx,
+  sas = cohort_sas,
+  rds = cohort_rds
 )
+sapply(cohort_files, class)
+
+# Inspect the imported object contents.
+library(Hmisc)
+lapply(cohort_files, contents)
 
 # From here onwwards, let us use the csv_readr version to mimic real world
 cohort <- cohort_csv_readr

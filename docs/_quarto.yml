@@ -39,7 +39,7 @@ book:
     tools:
       - icon: easel
         text: "Presentation slides"
-        href: slides.html
+        href: slides.pdf
 
 bibliography: references.bib
 csl: american-medical-association.csl

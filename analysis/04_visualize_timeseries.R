@@ -1,10 +1,9 @@
 # ------------------------------------------------------------------------------
 # Visualize simulated salbutamol sales
 # ------------------------------------------------------------------------------
-
-# Instructions -----------------------------------------------------------------
-
-
+# Now it is your turn to try to write some code. In the next section (titled
+# "Exercise"), follow the instructions in comments to complete the right hand
+# side of the assignment operators.
 
 
 # Exercise ---------------------------------------------------------------------
@@ -16,14 +15,19 @@ library(lubridate)
 library(readr)
 library(tidyr)
 
-data_dir <- here("data", "raw")
-output_image_dir <- here("output", "images")
-covid_date <- as.Date("2020-03-01")
+### TO DO: use here() to define the relative path to the folder where
+### "salbutamol_sales.csv" is stored
+data_dir <- 
 
-salbutamol_sales_wide <- read_csv(
-  file.path(data_dir, "salbutamol_sales.csv"),
-  show_col_types = FALSE
-)
+### TO DO: use here() to define the relative path to the folder where the output
+### (which is an image) should be saved
+output_image_dir <- 
+
+### TO DO: define March 1, 2020 as a Date object
+covid_date <- 
+
+### TO DO: using data_dir, which you created above, read "salbutamol_sales.csv"
+salbutamol_sales_wide <- 
 
 
 # Reshape data ----------------------------------------------------------------
@@ -42,7 +46,7 @@ salbutamol_sales <- salbutamol_sales_wide %>%
 # Visualize time series -------------------------------------------------------
 
 salbutamol_plot <- ggplot(salbutamol_sales, aes(x = month, y = sales)) +
-  geom_line(color = "skyblue", linewidth = 0.8) +
+  geom_line(color = "skyblue", linewidth = 1) +
   geom_vline(
     xintercept = covid_date,
     linetype = "11",
@@ -89,3 +93,9 @@ ggsave(
   height = 6,
   dpi = 300
 )
+
+
+# Solutions --------------------------------------------------------------------
+
+# Uncomment the next line and run it
+# source(here("src", "timeseries_setup.R"), echo = TRUE)
