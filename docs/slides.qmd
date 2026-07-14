@@ -619,8 +619,6 @@ Functions turn a sequence of commands into a reusable tool.
 
 ## From files to findings[@wickhamdata]
 
-<br>
-
 ```{mermaid}
 flowchart LR
   A[Read data] --> B[Clean]
