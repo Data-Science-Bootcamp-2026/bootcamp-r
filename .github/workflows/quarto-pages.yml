@@ -25,12 +25,39 @@ jobs:
 
       - name: Set up R
         uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
 
       - name: Install R dependencies
-        run: Rscript -e 'install.packages(c("knitr", "rmarkdown"), repos = "https://cloud.r-project.org")'
+        uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: |
+            any::knitr
+            any::rmarkdown
+
+      - name: Verify R dependencies
+        shell: Rscript {0}
+        run: |
+          required <- c("knitr", "rmarkdown")
+          missing <- required[!vapply(required, requireNamespace, logical(1), quietly = TRUE)]
+          if (length(missing)) {
+            stop("Missing R packages: ", paste(missing, collapse = ", "))
+          }
+          message(
+            "R dependencies available: ",
+            paste(
+              required,
+              vapply(required, function(x) as.character(packageVersion(x)), character(1)),
+              collapse = "; "
+            )
+          )
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Set up Chrome
+        id: setup-chrome
+        uses: browser-actions/setup-chrome@v1
 
       - name: Install TinyTeX
         run: quarto install tinytex --update-path
@@ -44,6 +71,18 @@ jobs:
           cp docs/slides.html docs/_book/slides.html
           cp docs/slides.css docs/_book/slides.css
           cp -R docs/slides_files docs/_book/slides_files
+
+      - name: Render slides PDF
+        run: |
+          "${{ steps.setup-chrome.outputs.chrome-path }}" \
+            --headless \
+            --disable-gpu \
+            --allow-file-access-from-files \
+            --virtual-time-budget=10000 \
+            --no-pdf-header-footer \
+            --print-to-pdf=docs/slides.pdf \
+            "file://${GITHUB_WORKSPACE}/docs/slides.html?print-pdf"
+          cp docs/slides.pdf docs/_book/slides.pdf
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5

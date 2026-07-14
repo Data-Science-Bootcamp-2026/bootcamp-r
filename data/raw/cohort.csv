@@ -1,0 +1,101 @@
+"id","birthdate","sex","bmi","duration","non_insulin","insulin","hba1c"
+1,1952-10-29,"Male",29.8,12,"metformin, empagliflozin","long-acting",10.1
+2,1972-03-08,"Male",22.2,15,"metformin, semaglutide","long-acting",4.7
+3,1962-11-27,"Female",35.8,11,"metformin, semaglutide","rapid-acting",8.8
+4,1960-03-16,"Male",28.6,NA,"metformin, semaglutide","long-acting",8
+5,1962-06-29,"Female",27.7,19,"metformin","rapid-acting, long-acting",NA
+6,1967-08-07,"Female",23.8,12,"metformin, empagliflozin","long-acting",8.7
+7,1951-06-03,"Male",30,13,"metformin, semaglutide","long-acting",6.5
+8,1967-06-26,"Male",26,15,"metformin, empagliflozin, semaglutide","long-acting",7.3
+9,1946-05-09,"Male",27.3,12,"metformin, empagliflozin, semaglutide","long-acting",8.4
+10,1967-03-01,"Male",36.4,14,"metformin, semaglutide","rapid-acting, long-acting",7.8
+11,1953-06-27,"Male",29.1,18,"metformin, semaglutide","rapid-acting",8
+12,1943-09-02,"Female",24.6,18,"metformin, empagliflozin","rapid-acting, long-acting",8.3
+13,1980-06-04,"Male",30.8,16,"metformin, empagliflozin, semaglutide","long-acting",7.3
+14,1969-04-28,"Female",28.2,9,"metformin, semaglutide","rapid-acting, long-acting",7.9
+15,1967-11-14,"Male",33,15,"metformin, empagliflozin, semaglutide","long-acting",6
+16,1960-03-05,"Female",37.2,18,"metformin, semaglutide","rapid-acting",7.3
+17,1969-05-18,"Male",25,17,"metformin","rapid-acting, long-acting",NA
+18,1993-02-06,"Male",32.3,14,"metformin, empagliflozin, semaglutide","rapid-acting, long-acting",7.1
+19,1990-12-10,"Female",30.4,7,"metformin, semaglutide","rapid-acting",7.9
+20,1953-05-02,"Male",34.5,15,"metformin, empagliflozin, semaglutide","long-acting",9
+21,1969-08-08,"Female",28.9,17,"metformin, empagliflozin, semaglutide","rapid-acting, long-acting",5.1
+22,1984-05-07,"Female",34.2,15,"metformin, empagliflozin, semaglutide","rapid-acting, long-acting",6.2
+23,1968-04-03,"Female",21.3,15,"metformin, empagliflozin, semaglutide","long-acting",7.3
+24,1954-05-22,"Female",38.4,16,"metformin, semaglutide","long-acting",9.1
+25,1947-08-02,"Male",34.3,14,"metformin","rapid-acting",10.2
+26,1970-11-03,"Male",29.2,19,"metformin, empagliflozin, semaglutide","long-acting",6.7
+27,1969-02-09,"Male",22.8,16,"metformin, semaglutide","long-acting",8.2
+28,1984-03-02,"Male",33.2,11,"metformin","rapid-acting, long-acting",7.6
+29,1961-12-07,"Female",32.4,19,"metformin, semaglutide","rapid-acting",8.7
+30,1972-12-08,"Female",30,19,"metformin, empagliflozin","rapid-acting, long-acting",7.8
+31,1961-12-24,"Female",30.8,NA,"metformin, semaglutide","rapid-acting, long-acting",6.4
+32,1959-06-28,"Male",27.1,10,"metformin","rapid-acting, long-acting",9.1
+33,1956-03-08,"Male",31.8,13,"metformin","rapid-acting",9.7
+34,1972-08-16,"Female",31.5,17,"metformin, semaglutide","rapid-acting, long-acting",8.1
+35,1961-06-27,"Female",28.6,NA,"metformin, empagliflozin, semaglutide","long-acting",8.7
+36,1983-09-15,"Female",23.3,16,"metformin, empagliflozin, semaglutide","rapid-acting, long-acting",5.6
+37,1974-05-19,"Female",33.5,22,"metformin, empagliflozin","rapid-acting",7.5
+38,1975-01-17,"Male",32.8,13,"metformin, semaglutide","rapid-acting, long-acting",7
+39,1990-09-05,"Male",25.8,9,"metformin","rapid-acting, long-acting",7.2
+40,1966-03-05,"Male",22,16,"metformin, empagliflozin","rapid-acting, long-acting",5.9
+41,1964-06-23,"Female",31,13,"metformin, semaglutide","rapid-acting",7.7
+42,1970-02-23,"Female",28.3,16,"metformin, empagliflozin, semaglutide","long-acting",5.9
+43,1958-12-15,"Female",31.3,13,"metformin, empagliflozin, semaglutide","rapid-acting, long-acting",8.9
+44,1973-10-20,"Male",23.5,22,"metformin, semaglutide","rapid-acting",7.2
+45,1980-03-21,"Male",25.2,15,"metformin, empagliflozin","rapid-acting",6.9
+46,1962-03-17,"Male",35.4,14,"metformin, empagliflozin","rapid-acting, long-acting",7.6
+47,1974-08-26,"Male",32,15,"metformin, semaglutide","rapid-acting",7.9
+48,1952-02-04,"Female",32.9,18,"metformin","rapid-acting",NA
+49,1970-11-07,"Female",39.1,15,"metformin, empagliflozin, semaglutide","rapid-acting",10.6
+50,1959-12-24,"Female",30.6,10,"metformin, semaglutide","long-acting",7.4
+51,1963-04-26,"Female",20,15,"metformin, empagliflozin, semaglutide","rapid-acting, long-acting",6.1
+52,1974-05-17,"Male",31.7,NA,"metformin, empagliflozin, semaglutide","rapid-acting",8.9
+53,1950-10-12,"Female",35.9,15,"metformin, empagliflozin, semaglutide","long-acting",9
+54,1960-02-09,"Female",40.3,17,"metformin","rapid-acting",11.4
+55,1965-08-21,"Male",23.1,15,"metformin, empagliflozin","rapid-acting",7.5
+56,1963-10-09,"Male",24.2,15,"metformin, empagliflozin","rapid-acting, long-acting",8
+57,1959-09-29,"Female",26.5,16,"metformin, empagliflozin","long-acting",8.3
+58,1965-08-21,"Female",24.7,18,"metformin, empagliflozin, semaglutide","rapid-acting",10.1
+59,1996-06-19,"Female",26.8,11,"metformin","long-acting",8.3
+60,1963-09-08,"Male",29.1,15,"metformin","rapid-acting, long-acting",7
+61,1970-03-17,"Female",24,NA,"metformin, semaglutide","rapid-acting",NA
+62,1964-09-06,"Female",40.2,13,"metformin, semaglutide","rapid-acting, long-acting",9.3
+63,1960-09-19,"Female",30.5,12,"metformin, semaglutide","long-acting",6.8
+64,1952-07-15,"Male",29.6,13,"metformin","long-acting",7.7
+65,1973-10-22,"Male",32.5,17,"metformin, semaglutide","rapid-acting, long-acting",NA
+66,1953-07-05,"Female",30.2,14,"metformin","rapid-acting",9.2
+67,1963-03-06,"Male",29.3,13,"metformin, empagliflozin","rapid-acting",10.1
+68,1956-02-25,"Female",37.4,15,"metformin, semaglutide","long-acting",8.9
+69,1957-04-30,"Male",28.9,11,"metformin","rapid-acting, long-acting",9.3
+70,1959-04-30,"Female",23.6,18,"metformin, empagliflozin","long-acting",7.5
+71,1976-12-19,"Female",31.9,14,"metformin","rapid-acting",7.9
+72,1967-06-09,"Female",28.2,16,"metformin, empagliflozin, semaglutide","rapid-acting, long-acting",8.2
+73,1960-04-20,"Male",27.4,15,"metformin, empagliflozin","rapid-acting, long-acting",6.8
+74,1976-01-27,"Female",24.7,15,"metformin","rapid-acting",7.5
+75,1971-12-19,"Male",32.1,20,"metformin, empagliflozin, semaglutide","long-acting",6.5
+76,1960-09-22,"Female",29.1,13,"metformin, empagliflozin","rapid-acting, long-acting",8.9
+77,1958-11-08,"Male",32.6,18,"metformin, semaglutide","rapid-acting",10
+78,1961-11-24,"Female",28.8,15,"metformin, empagliflozin","rapid-acting",9.1
+79,1975-05-24,"Female",26.7,12,"metformin","long-acting",9.6
+80,1977-07-14,"Female",36.3,15,"metformin, empagliflozin","rapid-acting",9.3
+81,1951-05-30,"Male",28.6,17,"metformin, semaglutide","rapid-acting, long-acting",7.2
+82,1963-12-16,"Male",34.7,14,"metformin","long-acting",9.4
+83,1965-08-26,"Female",24,13,"metformin, empagliflozin","rapid-acting, long-acting",9
+84,1967-09-30,"Male",27.7,15,"metformin, empagliflozin, semaglutide","rapid-acting",6
+85,1978-06-24,"Male",28.7,18,"metformin, empagliflozin","long-acting",7.4
+86,1960-06-01,"Female",28,15,"metformin, semaglutide","long-acting",7.9
+87,1968-09-15,"Female",36.7,11,"metformin, empagliflozin, semaglutide","long-acting",9.7
+88,1968-05-13,"Female",29.9,11,"metformin, empagliflozin","long-acting",9.5
+89,1957-03-15,"Female",31.2,13,"metformin","rapid-acting",9.9
+90,1958-04-26,"Female",25.3,13,"metformin, empagliflozin, semaglutide","rapid-acting, long-acting",9
+91,1952-08-12,"Female",26.4,15,"metformin, empagliflozin, semaglutide","long-acting",6.5
+92,1971-04-19,"Male",35,17,"metformin, empagliflozin, semaglutide","rapid-acting, long-acting",8.1
+93,1960-01-13,"Female",36.3,14,"metformin, semaglutide","rapid-acting, long-acting",7.1
+94,1952-08-16,"Female",36.2,12,"metformin, empagliflozin","rapid-acting",10.8
+95,1977-08-23,"Male",23.1,17,"metformin","long-acting",7.1
+96,1975-02-22,"Male",40.2,16,"metformin, empagliflozin, semaglutide","long-acting",9.1
+97,1977-11-08,"Female",35.1,18,"metformin, empagliflozin","rapid-acting, long-acting",7.4
+98,1981-02-16,"Female",29.9,10,"metformin","rapid-acting",7.2
+99,1965-09-26,"Female",33.5,15,"metformin, empagliflozin, semaglutide","long-acting",6
+100,1960-01-02,"Male",25.1,19,"metformin, empagliflozin","rapid-acting, long-acting",7.6

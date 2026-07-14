@@ -104,12 +104,17 @@ Code turns analyses from a sequence of clicks into an **auditable recipe**.
 
 ## Two software philosophies [@kenneth2023sas]
 
-| SAS | R |
-|---|---|
-| Proprietary and paid | Open source and free |
-| Centralized validation, documentation, and support by vendor | Decentralized community-developed ecosystem of packages (validation, quality, and support may vary) |
-| Standardized procedures | Flexible and extensible |
-| Mature regulated workflows | Increasing adoption in regulated workflows |
++---------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+| SAS                                                                 | R                                                                                                                         |
++=====================================================================+===========================================================================================================================+
+| Proprietary and paid                                                | Open source and free                                                                                                      |
++---------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+| Centralized validation, documentation, and support by vendor        | Decentralized community-developed ecosystem of packages (validation, quality, and support may vary)                       |
++---------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+| Standardized procedures                                             | Flexible and extensible                                                                                                   |
++---------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+| Mature regulated workflows                                          | Increasing adoption in regulated workflows                                                                                |
++---------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
 
 ::: {.columns}
 ::: {.column width="28%"}
@@ -300,13 +305,18 @@ A very popular collection of packages that share common data representations and
 
 ::: {.columns}
 ::: {.column width="52%"}
-| Purpose | Operators |
-|---|---|
-| Assignment | `<-` |
-| Arithmetic | `+`, `-`, `*`, `/`, `^`, `sqrt()`, `log()` |
-| Relational | `>`, `>=`, `<`, `<=`, `==`, `!=` |
-| Membership | `%in%` |
-| Logical | `&`, `|`, `!` |
++----------------+---------------------------------------------+
+| Purpose        | Operators                                   |
++================+=============================================+
+| Assignment     | `<-`                                        |
++----------------+---------------------------------------------+
+| Arithmetic     | `+`, `-`, `*`, `/`, `^`, `sqrt()`, `log()`  |
++----------------+---------------------------------------------+
+| Relational     | `>`, `>=`, `<`, `<=`, `==`, `!=`\           |
+|                | `%in%`                                      |
++----------------+---------------------------------------------+
+| Logical        | `&`, `|`, `!`                               |
++----------------+---------------------------------------------+
 :::
 
 ::: {.column width="43%"}
@@ -337,7 +347,7 @@ x > 0 & x < 2
 :::
 :::
 
-Object names may contain letters, digits, periods, and underscores. Names cannot start with a digit or underscore, nor a period followed by a digit [@ethzurichquotes].
+Object names may contain letters, digits, periods, and underscores. Use *snake_case* (e.g., `my_variable_name`) [@wickhamdata]. Names cannot start with a digit or underscore, nor a period followed by a digit [@ethzurichquotes].
 
 ::: {.notes}
 - What is `x`? It is 1, not 3! Unless you assign it, such as `x <- x + 2`, it will not save.
@@ -438,11 +448,15 @@ while (cases >= 0) {
 
 ## Type, class, and structure
 
-| Concept | Question | Examples |
-|---|---|---|
-| **Type** | How is it stored? | double, integer, logical, character, list |
-| **Class** | How does it behave? | numeric, date, logical, character, list, data frame |
-| **Structure** | How is it organized? | vector, matrix, array, list, data frame |
++----------------+----------------------+-----------------------------------------------------+
+| Concept        | Question             | Examples                                            |
++================+======================+=====================================================+
+| **Type**       | How is it stored?    | double, integer, logical, character, list           |
++----------------+----------------------+-----------------------------------------------------+
+| **Class**      | How does it behave?  | numeric, date, logical, character, list, data frame |
++----------------+----------------------+-----------------------------------------------------+
+| **Structure**  | How is it organized? | vector, matrix, array, list, data frame             |
++----------------+----------------------+-----------------------------------------------------+
 
 <br>
 
@@ -603,23 +617,25 @@ Functions turn a sequence of commands into a reusable tool.
 
 
 
-## From files to findings
+## From files to findings[@wickhamdata]
 
 <br>
 
 ```{mermaid}
 flowchart LR
   A[Read data] --> B[Clean]
-  B --> C[Transform]
-  C --> D[Explore]
-  D --> E[Model]
-  E --> F[Communicate]
-  F -. revise .-> B
+  B --> C
+  subgraph analysis[" "]
+    direction LR
+    C[Transform] --> D[Explore]
+    D --> E[Model]
+    E --> C
+  end
+  analysis --> F[Communicate]
+  style analysis fill:#eeeeee,stroke:none
 ```
 
-<br>
 <hr class="slide-divider">
-<br>
 
 ::: {.fragment}
 Common file types include `.csv`, `.xlsx`, `sas7bdat`, `.rds`, and `.RData`.
@@ -697,7 +713,10 @@ A reproducible workflow records **data, code, versions, and decisions**.
 <script>
 window.addEventListener("load", function () {
   function fitReferenceList() {
-    const slide = Reveal.getCurrentSlide();
+    const isPrintView = window.location.search.includes("print-pdf");
+    const slide = isPrintView
+      ? document.getElementById("refs")
+      : Reveal.getCurrentSlide();
     if (!slide || slide.id !== "refs") return;
 
     const references = slide.querySelector(":scope > .references");

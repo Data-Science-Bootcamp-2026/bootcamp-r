@@ -24,7 +24,7 @@ Object names must only contain:
 - Underscores
 - Periods
 
-Object names must not start with a digit or underscore, nor a period followed by a digit [@ethzurichquotes].
+Use *snake_case*, which uses lowercase words separated by underscores, for example `my_variable_name` [@wickhamdata]. Object names must not start with a digit or underscore, nor a period followed by a digit [@ethzurichquotes].
 
 Avoid the following single-character object names:
 

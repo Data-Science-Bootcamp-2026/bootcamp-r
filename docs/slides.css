@@ -72,6 +72,7 @@
   background: var(--bootcamp-pale);
   border-left: 0.28em solid var(--bootcamp-blue);
   box-shadow: none;
+  color: var(--r-main-color);
   font-style: normal;
   margin: 1em 0;
   padding: 0.65em 1em;
