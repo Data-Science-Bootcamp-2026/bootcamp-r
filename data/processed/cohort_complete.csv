@@ -1,0 +1,96 @@
+...1,age,sex,bmi,duration,non_insulin,insulin,hba1c,empagliflozin,metformin,semaglutide,insulin_long,insulin_rapid
+54,66,Female,40.3,17,metformin,rapid-acting,11.4,0,1,0,0,1
+94,73,Female,36.2,12,"metformin, empagliflozin",rapid-acting,10.8,1,1,0,0,1
+49,55,Female,39.1,15,"metformin, empagliflozin, semaglutide",rapid-acting,10.6,1,1,1,0,1
+25,78,Male,34.3,14,metformin,rapid-acting,10.2,0,1,0,0,1
+1,73,Male,29.8,12,"metformin, empagliflozin",long-acting,10.1,1,1,0,1,0
+58,60,Female,24.7,18,"metformin, empagliflozin, semaglutide",rapid-acting,10.1,1,1,1,0,1
+67,63,Male,29.3,13,"metformin, empagliflozin",rapid-acting,10.1,1,1,0,0,1
+77,67,Male,32.6,18,"metformin, semaglutide",rapid-acting,10,0,1,1,0,1
+89,69,Female,31.2,13,metformin,rapid-acting,9.9,0,1,0,0,1
+33,70,Male,31.8,13,metformin,rapid-acting,9.7,0,1,0,0,1
+87,57,Female,36.7,11,"metformin, empagliflozin, semaglutide",long-acting,9.7,1,1,1,1,0
+79,51,Female,26.7,12,metformin,long-acting,9.6,0,1,0,1,0
+88,58,Female,29.9,11,"metformin, empagliflozin",long-acting,9.5,1,1,0,1,0
+82,62,Male,34.7,14,metformin,long-acting,9.4,0,1,0,1,0
+62,61,Female,40.2,13,"metformin, semaglutide","rapid-acting, long-acting",9.3,0,1,1,1,1
+69,69,Male,28.9,11,metformin,"rapid-acting, long-acting",9.3,0,1,0,1,1
+80,48,Female,36.3,15,"metformin, empagliflozin",rapid-acting,9.3,1,1,0,0,1
+66,73,Female,30.2,14,metformin,rapid-acting,9.2,0,1,0,0,1
+24,72,Female,38.4,16,"metformin, semaglutide",long-acting,9.1,0,1,1,1,0
+32,67,Male,27.1,10,metformin,"rapid-acting, long-acting",9.1,0,1,0,1,1
+78,64,Female,28.8,15,"metformin, empagliflozin",rapid-acting,9.1,1,1,0,0,1
+96,51,Male,40.2,16,"metformin, empagliflozin, semaglutide",long-acting,9.1,1,1,1,1,0
+20,73,Male,34.5,15,"metformin, empagliflozin, semaglutide",long-acting,9,1,1,1,1,0
+53,75,Female,35.9,15,"metformin, empagliflozin, semaglutide",long-acting,9,1,1,1,1,0
+83,60,Female,24,13,"metformin, empagliflozin","rapid-acting, long-acting",9,1,1,0,1,1
+90,68,Female,25.3,13,"metformin, empagliflozin, semaglutide","rapid-acting, long-acting",9,1,1,1,1,1
+43,67,Female,31.3,13,"metformin, empagliflozin, semaglutide","rapid-acting, long-acting",8.9,1,1,1,1,1
+52,52,Male,31.7,NA,"metformin, empagliflozin, semaglutide",rapid-acting,8.9,1,1,1,0,1
+68,70,Female,37.4,15,"metformin, semaglutide",long-acting,8.9,0,1,1,1,0
+76,65,Female,29.1,13,"metformin, empagliflozin","rapid-acting, long-acting",8.9,1,1,0,1,1
+3,63,Female,35.8,11,"metformin, semaglutide",rapid-acting,8.8,0,1,1,0,1
+6,58,Female,23.8,12,"metformin, empagliflozin",long-acting,8.7,1,1,0,1,0
+29,64,Female,32.4,19,"metformin, semaglutide",rapid-acting,8.7,0,1,1,0,1
+35,65,Female,28.6,NA,"metformin, empagliflozin, semaglutide",long-acting,8.7,1,1,1,1,0
+9,80,Male,27.3,12,"metformin, empagliflozin, semaglutide",long-acting,8.4,1,1,1,1,0
+12,82,Female,24.6,18,"metformin, empagliflozin","rapid-acting, long-acting",8.3,1,1,0,1,1
+57,66,Female,26.5,16,"metformin, empagliflozin",long-acting,8.3,1,1,0,1,0
+59,30,Female,26.8,11,metformin,long-acting,8.3,0,1,0,1,0
+27,57,Male,22.8,16,"metformin, semaglutide",long-acting,8.2,0,1,1,1,0
+72,59,Female,28.2,16,"metformin, empagliflozin, semaglutide","rapid-acting, long-acting",8.2,1,1,1,1,1
+34,53,Female,31.5,17,"metformin, semaglutide","rapid-acting, long-acting",8.1,0,1,1,1,1
+92,55,Male,35,17,"metformin, empagliflozin, semaglutide","rapid-acting, long-acting",8.1,1,1,1,1,1
+4,66,Male,28.6,NA,"metformin, semaglutide",long-acting,8,0,1,1,1,0
+11,73,Male,29.1,18,"metformin, semaglutide",rapid-acting,8,0,1,1,0,1
+56,62,Male,24.2,15,"metformin, empagliflozin","rapid-acting, long-acting",8,1,1,0,1,1
+14,57,Female,28.2,9,"metformin, semaglutide","rapid-acting, long-acting",7.9,0,1,1,1,1
+19,35,Female,30.4,7,"metformin, semaglutide",rapid-acting,7.9,0,1,1,0,1
+47,51,Male,32,15,"metformin, semaglutide",rapid-acting,7.9,0,1,1,0,1
+71,49,Female,31.9,14,metformin,rapid-acting,7.9,0,1,0,0,1
+86,66,Female,28,15,"metformin, semaglutide",long-acting,7.9,0,1,1,1,0
+10,59,Male,36.4,14,"metformin, semaglutide","rapid-acting, long-acting",7.8,0,1,1,1,1
+30,53,Female,30,19,"metformin, empagliflozin","rapid-acting, long-acting",7.8,1,1,0,1,1
+41,62,Female,31,13,"metformin, semaglutide",rapid-acting,7.7,0,1,1,0,1
+64,73,Male,29.6,13,metformin,long-acting,7.7,0,1,0,1,0
+28,42,Male,33.2,11,metformin,"rapid-acting, long-acting",7.6,0,1,0,1,1
+46,64,Male,35.4,14,"metformin, empagliflozin","rapid-acting, long-acting",7.6,1,1,0,1,1
+100,66,Male,25.1,19,"metformin, empagliflozin","rapid-acting, long-acting",7.6,1,1,0,1,1
+37,52,Female,33.5,22,"metformin, empagliflozin",rapid-acting,7.5,1,1,0,0,1
+55,60,Male,23.1,15,"metformin, empagliflozin",rapid-acting,7.5,1,1,0,0,1
+70,67,Female,23.6,18,"metformin, empagliflozin",long-acting,7.5,1,1,0,1,0
+74,50,Female,24.7,15,metformin,rapid-acting,7.5,0,1,0,0,1
+50,66,Female,30.6,10,"metformin, semaglutide",long-acting,7.4,0,1,1,1,0
+85,48,Male,28.7,18,"metformin, empagliflozin",long-acting,7.4,1,1,0,1,0
+97,48,Female,35.1,18,"metformin, empagliflozin","rapid-acting, long-acting",7.4,1,1,0,1,1
+8,59,Male,26,15,"metformin, empagliflozin, semaglutide",long-acting,7.3,1,1,1,1,0
+13,46,Male,30.8,16,"metformin, empagliflozin, semaglutide",long-acting,7.3,1,1,1,1,0
+16,66,Female,37.2,18,"metformin, semaglutide",rapid-acting,7.3,0,1,1,0,1
+23,58,Female,21.3,15,"metformin, empagliflozin, semaglutide",long-acting,7.3,1,1,1,1,0
+39,35,Male,25.8,9,metformin,"rapid-acting, long-acting",7.2,0,1,0,1,1
+44,52,Male,23.5,22,"metformin, semaglutide",rapid-acting,7.2,0,1,1,0,1
+81,75,Male,28.6,17,"metformin, semaglutide","rapid-acting, long-acting",7.2,0,1,1,1,1
+98,45,Female,29.9,10,metformin,rapid-acting,7.2,0,1,0,0,1
+18,33,Male,32.3,14,"metformin, empagliflozin, semaglutide","rapid-acting, long-acting",7.1,1,1,1,1,1
+93,66,Female,36.3,14,"metformin, semaglutide","rapid-acting, long-acting",7.1,0,1,1,1,1
+95,48,Male,23.1,17,metformin,long-acting,7.1,0,1,0,1,0
+38,51,Male,32.8,13,"metformin, semaglutide","rapid-acting, long-acting",7,0,1,1,1,1
+60,62,Male,29.1,15,metformin,"rapid-acting, long-acting",7,0,1,0,1,1
+45,46,Male,25.2,15,"metformin, empagliflozin",rapid-acting,6.9,1,1,0,0,1
+63,65,Female,30.5,12,"metformin, semaglutide",long-acting,6.8,0,1,1,1,0
+73,66,Male,27.4,15,"metformin, empagliflozin","rapid-acting, long-acting",6.8,1,1,0,1,1
+26,55,Male,29.2,19,"metformin, empagliflozin, semaglutide",long-acting,6.7,1,1,1,1,0
+7,75,Male,30,13,"metformin, semaglutide",long-acting,6.5,0,1,1,1,0
+75,54,Male,32.1,20,"metformin, empagliflozin, semaglutide",long-acting,6.5,1,1,1,1,0
+91,73,Female,26.4,15,"metformin, empagliflozin, semaglutide",long-acting,6.5,1,1,1,1,0
+31,64,Female,30.8,NA,"metformin, semaglutide","rapid-acting, long-acting",6.4,0,1,1,1,1
+22,42,Female,34.2,15,"metformin, empagliflozin, semaglutide","rapid-acting, long-acting",6.2,1,1,1,1,1
+51,63,Female,20,15,"metformin, empagliflozin, semaglutide","rapid-acting, long-acting",6.1,1,1,1,1,1
+15,58,Male,33,15,"metformin, empagliflozin, semaglutide",long-acting,6,1,1,1,1,0
+84,58,Male,27.7,15,"metformin, empagliflozin, semaglutide",rapid-acting,6,1,1,1,0,1
+99,60,Female,33.5,15,"metformin, empagliflozin, semaglutide",long-acting,6,1,1,1,1,0
+40,60,Male,22,16,"metformin, empagliflozin","rapid-acting, long-acting",5.9,1,1,0,1,1
+42,56,Female,28.3,16,"metformin, empagliflozin, semaglutide",long-acting,5.9,1,1,1,1,0
+36,42,Female,23.3,16,"metformin, empagliflozin, semaglutide","rapid-acting, long-acting",5.6,1,1,1,1,1
+21,56,Female,28.9,17,"metformin, empagliflozin, semaglutide","rapid-acting, long-acting",5.1,1,1,1,1,1
+2,54,Male,22.2,15,"metformin, semaglutide",long-acting,4.7,0,1,1,1,0

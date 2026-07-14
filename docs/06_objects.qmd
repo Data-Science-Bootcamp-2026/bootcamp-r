@@ -78,6 +78,16 @@ my_vector
 # remove elements, rather than look backwards)
 my_vector[2]
 
+# You can name each element
+my_vector = c(
+  cases_2020 = 25,
+  cases_2021 = 125
+)
+my_vector
+
+# Find elements by indexing their name
+my_vector["cases_2020"]
+
 # If you try to construct vectors using elements of different types,
 # R will try to coerce the elements to match. In the
 # following example, TRUE becomes 1 (FALSE would be 0).
@@ -125,8 +135,8 @@ my_list[[2]][2]
 
 # You can name each element
 my_list = list(
-  cases_2020 = 25,
-  cases_2021 = 125
+  country = "Canada",
+  cases_2020 = 25
 )
 my_list
 

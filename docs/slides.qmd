@@ -104,12 +104,17 @@ Code turns analyses from a sequence of clicks into an **auditable recipe**.
 
 ## Two software philosophies [@kenneth2023sas]
 
-| SAS | R |
-|---|---|
-| Proprietary and paid | Open source and free |
-| Centralized validation, documentation, and support by vendor | Decentralized community-developed ecosystem of packages (validation, quality, and support may vary) |
-| Standardized procedures | Flexible and extensible |
-| Mature regulated workflows | Increasing adoption in regulated workflows |
++---------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+| SAS                                                                 | R                                                                                                                         |
++=====================================================================+===========================================================================================================================+
+| Proprietary and paid                                                | Open source and free                                                                                                      |
++---------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+| Centralized validation, documentation, and support by vendor        | Decentralized community-developed ecosystem of packages (validation, quality, and support may vary)                       |
++---------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+| Standardized procedures                                             | Flexible and extensible                                                                                                   |
++---------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+| Mature regulated workflows                                          | Increasing adoption in regulated workflows                                                                                |
++---------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
 
 ::: {.columns}
 ::: {.column width="28%"}
@@ -300,13 +305,18 @@ A very popular collection of packages that share common data representations and
 
 ::: {.columns}
 ::: {.column width="52%"}
-| Purpose | Operators |
-|---|---|
-| Assignment | `<-` |
-| Arithmetic | `+`, `-`, `*`, `/`, `^`, `sqrt()`, `log()` |
-| Relational | `>`, `>=`, `<`, `<=`, `==`, `!=` |
-| Membership | `%in%` |
-| Logical | `&`, `|`, `!` |
++----------------+---------------------------------------------+
+| Purpose        | Operators                                   |
++================+=============================================+
+| Assignment     | `<-`                                        |
++----------------+---------------------------------------------+
+| Arithmetic     | `+`, `-`, `*`, `/`, `^`, `sqrt()`, `log()`  |
++----------------+---------------------------------------------+
+| Relational     | `>`, `>=`, `<`, `<=`, `==`, `!=`\           |
+|                | `%in%`                                      |
++----------------+---------------------------------------------+
+| Logical        | `&`, `|`, `!`                               |
++----------------+---------------------------------------------+
 :::
 
 ::: {.column width="43%"}
@@ -438,11 +448,15 @@ while (cases >= 0) {
 
 ## Type, class, and structure
 
-| Concept | Question | Examples |
-|---|---|---|
-| **Type** | How is it stored? | double, integer, logical, character, list |
-| **Class** | How does it behave? | numeric, date, logical, character, list, data frame |
-| **Structure** | How is it organized? | vector, matrix, array, list, data frame |
++----------------+----------------------+-----------------------------------------------------+
+| Concept        | Question             | Examples                                            |
++================+======================+=====================================================+
+| **Type**       | How is it stored?    | double, integer, logical, character, list           |
++----------------+----------------------+-----------------------------------------------------+
+| **Class**      | How does it behave?  | numeric, date, logical, character, list, data frame |
++----------------+----------------------+-----------------------------------------------------+
+| **Structure**  | How is it organized? | vector, matrix, array, list, data frame             |
++----------------+----------------------+-----------------------------------------------------+
 
 <br>
 
