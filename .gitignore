@@ -53,3 +53,8 @@ rsconnect/
 docs/.quarto/
 docs/_book/
 docs/slides.pdf
+
+# Exercise
+*.Rproj
+data/processed/
+output/
