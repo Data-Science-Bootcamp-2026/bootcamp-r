@@ -12,11 +12,15 @@
 # to the project root
 ?getwd
 getwd()
+my_dir <- getwd()
 
 # You can also set the working directory to something else. This example moves
 # into the raw-data directory, then restores the project root for the imports.
 setwd("data/raw")
 getwd()
+
+# Revert it back to the original
+setwd(my_dir)
 
 # Now our working directory has drifted away from the project root, which may be
 # undesirable. This is why I prefer to use here::here(), which searches for
