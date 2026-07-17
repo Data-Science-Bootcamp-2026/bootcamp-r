@@ -20,7 +20,7 @@ Common tabular data formats include:
 
 ::: {.callout-caution}
 ## **Caution**
-Different data formats store missing data differently. In CSV, missingness is just blank. In Excel, missingness appears as an empty cell. In SAS, missingness is `.` (if numeric) or blank (if categorical). In R, missingness is `NA`. Opening a CSV with Excel will make missing values appear as `"NA"` even though it is actually blank in the CSV file.
+Different data formats denote missing data differently. In CSV, missingness is just blank. In Excel, missingness appears as an empty cell. In SAS, missingness is `.` (if numeric) or blank (if categorical). In R, missingness is `NA`.
 :::
 
 
